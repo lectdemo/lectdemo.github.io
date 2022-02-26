@@ -1,0 +1,305 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- DW6 -->
+
+<!-- 
+Based on the Macromedia Dreamweaver MX 2004 design "Halo Left Nav" 
+Created by Michael Malahe - mmalahe@gmail.com 
+-->
+
+
+<!-- 
+---HEAD---
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Demonline - Lecture Demos</title>
+<link rel="stylesheet" href="images/uct_phy.css" type="text/css">
+
+<!--MENU SCRIPT-->
+<script type="text/javascript">
+var time = 3000;
+var numofitems = 4; //Number of left-hand navigation menu items
+standard = "10px" //Standard font size
+
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "sec"+thisitem;
+  divname="related"+thisitem;  
+  this.numberofmenuitems = numofitems;
+  this.caller = document.getElementById(callname);
+  this.thediv = document.getElementById(divname);
+  this.thediv.style.fontSize = startstate;
+}
+
+//menu methods
+function ehandler(event,theobj){
+	if (event == 1) {//mouse click
+	    var init_state = theobj.thediv.style.fontSize;
+  		if (init_state == "0px"){
+  			theobj.thediv.style.fontSize = standard;
+  		}
+  		else if (init_state == standard){
+  			theobj.thediv.style.fontSize = "0px";
+  		}
+	}
+}
+				
+// -->
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+
+
+<!-- 
+---BODY ---
+-->
+<body> 
+<div id="breadCrumb"> 
+  <div align="center"><a href="index.html">lecture demos</a> | <a href="../virtual/index.html">vpython scripts</a> | <a href="../index.html">demonline home</a> | <a href="http://www.phy.uct.ac.za">uct physics home</a> </div>
+</div> 
+<div id="pagecell1"> 
+  <!--pagecell1--> 
+  <div id="pageName"> 
+    <h2 align="center">Light and Waves Index </h2> 
+     </strong></div> 
+  <div id="pageNav"> 
+  	
+	<div class="relatedLinks"> 
+      <h1>Demo Index</h1>
+    </div>
+	
+	<div id="sectionLinks"> 
+      <a href = "index-m.html" id="sec1" class="seclink" title="Mechanics Index">Mechanics</a> 
+	</div> 
+	
+		<div id="sectionLinks"> 
+	<a href="index-e.html" id="sec2" class="seclink" title="Electromagnetism Index">Electromagnetism</a>
+    </div>
+	
+    	<div id="sectionLinks"> 
+	<a href="index-l.html" id="sec3" class="seclink" title="Light and Waves Index">Light and Waves</a>
+    </div>
+	
+    	<div id="sectionLinks"> 
+	<a href="index-h.html" id="sec4" class="seclink" title="Thermodynamics Index">Thermodynamics and Matter</a>    </div>
+	
+        <div class="subglobalNav"> 
+      This section of the site is currently under construction.
+	</div> 
+  </div> 
+  <div id="content"> 
+    <div class="feature"> 
+	<br>
+	The light and waves demonstrations are on Level 3 (Behind Lecture Theatre B). <br>
+	<br>
+		<table width="0%"  border="0" cellpadding=" " cellspacing=" ">
+<tr bgcolor="#CCCCCC">
+<th scope="col"><div align="left" style="font-size: small">Name</div></th>
+<th scope="col"><div align="left">Purpose</div></th>
+</tr>
+<tr>
+<td width="213" scope="col"><h2 align="left" style="font-size: small"><a href="l01.html">L1:Linear Lens Arrays</a></h2></td>
+<td width="643" scope="col"><div align="left">Used for focussing of light.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l02.html">L2:Lens Aberrations</a></h2></td>
+<td><div align="left">Demonstrates spherical and chromatic aberration.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l03.html">L3:Lenses and Mirrors</a></h2></td>
+<td><div align="left">Useful for various light demonstrations.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l04.html">L4:Panels</a></h2></td>
+<td><div align="left">Useful for light demonstrations.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l05.html">L5:Case of Lenses</a></h2></td>
+<td><div align="left">Useful for light demonstrations.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l08.html">L8:Unknown</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l12.html">L12:Mechanical Refraction</a></h2></td>
+<td><div align="left">Demonstrates a mechanical analogy to refraction.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l13.html">L13:Refraction Tank</a></h2></td>
+<td><div align="left">Demonstrates refraction.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l14.html">L14:Double Refraction</a></h2></td>
+<td><div align="left">Demonstrates refraction in a medium which is not isotropic.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l15.html">L15:Multiple Reflections</a></h2></td>
+<td><div align="left">Demonstrates multiple reflections.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l17.html">L17:Semi-Circle Mirrors</a></h2></td>
+<td><div align="left">Unknown</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l19.html">L19:<strong> Lightbox Optical Set</strong></a></h2></td>
+<td><div align="left">An optical set for light demonstrations.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l22.html">L22:Total Reflection</a></h2></td>
+<td><div align="left">Demonstrates total internal reflection.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l30.html">L30:Adjustable Prism</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l32.html">L32:Direct Vision Prism</a></h2></td>
+<td><div align="left">Shows dispersion of light without mean deviation.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l33.html">L33:Unknown</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l35.html">L35:Prism on Stand</a></h2></td>
+<td><div align="left">Unknown</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l36.html">L36:Prism Tower</a></h2></td>
+<td><div align="left">Shows variation in refractivity.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l41.html">L41:Vibrating String</a></h2></td>
+<td><div align="left">Shows standing waves.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l42.html">L42:Resonator</a></h2></td>
+<td><div align="left">Unknown</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l43.html">L43:Chladni Plate</a></h2></td>
+<td><div align="left">Demonstrates the vibrational modes of a plate.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l44.html">L44:Point Source Interference</a></h2></td>
+<td><div align="left">Shows the constructive and destructive interference of two point sources.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l45.html">L45:Newton's Rings</a></h2></td>
+<td><div align="left">Shows the interference from reflection of light between two surfaces.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l47.html">L47:Longitudinal Waves</a></h2></td>
+<td><div align="left">Demonstrates longtudinal waves.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l49.html">L49:Torsional Waves</a></h2></td>
+<td><div align="left">Demonstrates torsional waves.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l50.html">L50:Array of Glass Plates</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l51.html">L51:Polarisation</a></h2></td>
+<td><div align="left">Demonstrates polarisation by using Brewster's angle.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l53.html">L53:Interfering Waves</a></h2></td>
+<td><div align="left">Demonstrates interference.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l55.html">L55:Crova&rsquo;s Disc</a></h2></td>
+<td><div align="left">Shows compressional and standing waves.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l56.html">L56:Lamp on Rod</a></h2></td>
+<td><div align="left">Unknown</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l57.html">L57:Ultraviolet Lamp</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l58.html">L58:Small UV Lamp</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l59.html">L59:Light Boxes</a></h2></td>
+<td><div align="left">Used for light demonstrations.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l61.html">L61:Directed Lamp</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l62.html">L62:Helium-Neon Laser</a></h2></td>
+<td><div align="left">Produces monochromatic light.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l66.html">L66:Photoelasticimetry</a></h2></td>
+<td><div align="left">Demonstrates various photoelastimetric effects.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l67.html">L67:<strong> Light Polarisation</strong></a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l69.html">L69:Rectilinear Propagation</a></h2></td>
+<td><div align="left">Demonstrates the rectilinear propagation of light.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l71.html">L71:Unknown</a></h2></td>
+<td><div align="left">Unknown</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l76.html">L76:Absorption and Reflection</a></h2></td>
+<td><div align="left">Shows the difference between absorption and reflection colours.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l77.html">L77:<strong> Colour Rendering</strong></a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l78.html">L78:<strong> Colour Mixture</strong></a></h2></td>
+<td><div align="left">Shows colour mixture using filters.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l79.html">L79:Colour Wheel</a></h2></td>
+<td><div align="left">Shows that white light is made up of many colours.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="l80.html">L80:Coloured Slats</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+</table>
+	</div> 
+  </div>  
+  <div id="siteInfo">    <a href="mailto:mmalahe@gmail.com">Contact Us</a> | &copy;2007-2008
+    UCT Physics Department </div> 
+</div> 
+<!--end pagecell1--> 
+
+<!-- Initial states of side navigation -->
+<script type="text/javascript">
+    <!--
+      var menuitem1 = new menu(4,1,"0px");
+	  var menuitem2 = new menu(4,2,"0px");
+	  var menuitem3 = new menu(4,3,"0px");
+	  var menuitem4 = new menu(4,4,"0px");
+    // -->
+    </script> 
+</body>
+</html>

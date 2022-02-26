@@ -1,0 +1,18 @@
+<table width="0%"  border="0" cellpadding=" " cellspacing=" ">
+<tr bgcolor="#CCCCCC">
+<th scope="col"><div align="left" style="font-size: small">Name</div></th>
+<th scope="col"><div align="left">Purpose</div></th>
+</tr>
+<tr>
+<td width="213" scope="col"><h2 align="left" style="font-size: small"><a href="ad1.html">Bellows and Blower</a></h2></td>
+<td width="643" scope="col"><div align="left">Accesory to demonstrations.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="ad2.html">AD2:Venturi</a></h2></td>
+<td><div align="left">Shows the distribution of pressure through a non-uniform cross-section.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="ad6.html">AD6:Pumps</a></h2></td>
+<td><div align="left">Shows the mechanism of diffusion pumps.</div></td>
+</tr>
+</table>

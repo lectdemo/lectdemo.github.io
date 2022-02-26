@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- DW6 -->
+
+<!-- 
+Based on the Macromedia Dreamweaver MX 2004 design "Halo Left Nav" 
+Created by Michael Malahe - mmalahe@gmail.com 
+-->
+
+
+<!-- 
+---HEAD---
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Demonline - VPython Scripts</title>
+<link rel="stylesheet" href="images/uct_phy.css" type="text/css">
+
+<!--MENU SCRIPT-->
+<script type="text/javascript">
+var time = 3000;
+var numofitems = 2; //Number of left-hand navigation menu items
+standard = "10px" //Standard font size
+
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "sec"+thisitem;
+  divname="related"+thisitem;  
+  this.numberofmenuitems = numofitems;
+  this.caller = document.getElementById(callname);
+  this.thediv = document.getElementById(divname);
+  this.thediv.style.fontSize = startstate;
+}
+
+//menu methods
+function ehandler(event,theobj){
+	if (event == 1) {//mouse click
+	    var init_state = theobj.thediv.style.fontSize;
+  		if (init_state == "0px"){
+  			theobj.thediv.style.fontSize = standard;
+  		}
+  		else if (init_state == standard){
+  			theobj.thediv.style.fontSize = "0px";
+  		}
+	}
+}
+				
+// -->
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+
+
+<!-- 
+---BODY ---
+-->
+<body> 
+<div id="breadCrumb"> 
+  <div align="center"><a href="../pracs/index.html">lecture demos</a> | <a href="index.html">vpython scripts</a> | <a href="../index.html">demonline home</a> | <a href="http://www.phy.uct.ac.za">uct physics home</a> </div>
+</div> 
+<div id="pagecell1"> 
+  <!--pagecell1--> 
+  <div id="pageName"> 
+    <h2 align="center">Electromagnetism Index </h2> 
+     </strong></div> 
+  <div id="pageNav"> 
+  	
+	<div class="relatedLinks"> 
+      <h1>Script Index </h1>
+    </div>
+	
+	<div id="sectionLinks"> 
+      <a href = "index-m.html" id="sec1" class="seclink" title="Mechanics Index">Mechanics</a> 
+	</div> 
+	
+	<div id="sectionLinks"> 
+	<a href="index-e.html" id="sec2" class="seclink" title="Electromagnetism Index">Electromagnetism</a>
+    </div>
+	
+    <div class="subglobalNav"> 
+      <h1>Resources</h1>
+      <a href="http://www.python.org">Python</a> <br>
+      <a href="http://www.vpython.org">VPython</a>
+	</div> 
+  </div> 
+  <div id="content"> 
+    <div class="feature"> 
+      <table width="0%"  border="0">
+        <caption>&nbsp;
+        </caption>
+        <tr bgcolor="#CCCCCC">
+          <th scope="col"><div align="left" style="font-size: small">Name</div></th>
+          <th scope="col"><div align="left">Description</div></th>
+        </tr>
+        <tr>
+          <td width="212" scope="col"><h2 align="left" style="font-size: small"><a href="13_E_pointcharge_drag.html">Electric Field - Point Charge</a></h2></td>
+          <td width="654" scope="col"> <div align="left">Displays the electric field of a point charge. The electric field is sampled at fixed points and the charge can be interactively moved through space to see its effect on the electric field. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="13_vectorintro_a.html">Vector Intro</a></h2></td>
+          <td> <div align="left">Basic introduction to vectors. Not interactive. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="15_E_disk.html">Electric Field - Disk</a></h2></td>
+          <td> <div align="left">Electric field of a uniformly charged disk. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="15_E_disk_add_rings.html">Electric Field - Disk - Using Rings</a></h2></td>
+          <td> <div align="left">Adds up the electric field contributions of charged rings to get the electric field of a charged disk. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="15_E_ring_demo.html">Electric Field - Ring</a></h2></td>
+          <td> <div align="left">Calculates the electric field of a ring by integrating the contributions from a series of point charges. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="15_E_sphere_outside_rings.html">Electric Field - Outside Sphere</a></h2></td>
+          <td> <div align="left">Calculates the electric field outside a uniformly charged hollow sphere of charge by integrating the contributions from series of rings. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="15_E_sphere_rings.html">Electric Field - Inside Sphere</a></h2></td>
+          <td> <div align="left">Calculates the electric field inside a uniformly charged hollow sphere by integrating the contributions from series of rings. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="17_1_Bloop_with_r_dB.html">Magnetic Field - Loop</a></h2></td>
+          <td> <div align="left">Calculates the magnetic field of a current-carrying loop by integrating the contributions from a series of current segments. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="17_B_loop_xy_xz.html">Magnetic Field - Loop - XY&amp;XZ</a></h2></td>
+          <td> <div align="left">Shows the magnetic field from a current-carrying loop in the xy and xz planes. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="17_1_Bwire_with_r.html">Magnetic Field - Wire</a></h2></td>
+          <td> <div align="left">Calculates the magnetic field of a current-carring wire by integrating the contributions from a series of current segments. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="17_solenoid_drag.html">Magnetic Field - Solenoid</a></h2></td>
+          <td> <div align="left">Shows the magnetic field of a current-carrying solenoid. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="18-Erings.html">Electric Field - Rings</a></h2></td>
+          <td> <div align="left">Shows the electric field of a series of rings. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="19-RCcircuit.html">RC Circuit</a></h2></td>
+          <td> <div align="left">Numerical integration of an RC circuit. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="20_B_fastmoving_proton.html">Magnetic Field - Moving Proton</a></h2></td>
+          <td> <div align="left">Magnetic field around a fast-moving proton. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="20_E_fastmoving_proton.html">Electric Field - Moving Proton</a></h2></td>
+          <td> <div align="left">Electric field around a fast-moving proton. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="21_Gauss_2win.html">Gauss's Law</a></h2></td>
+          <td> <div align="left">A qualitative introduction to Gauss's Law. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="23_antenna.html">Antenna</a></h2></td>
+          <td> <div align="left">Propagation of electromagnetic waves from an antenna. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="23_plane_sinusoidal_wave.html">Plane Sinusoidal Wave</a></h2></td>
+          <td> <div align="left">Visualisation of the planar propagation of perpendicular electric and magnetic fields. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="23_radiate_kink.html">Radiation Kink</a></h2></td>
+          <td> <div align="left">Electric field of an accelerating source. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="23_Radiation2D_showR.html">Radiation - 2D</a></h2></td>
+          <td> <div align="left">Spherical electromagnetic wavefront from an accelerating source in 2D. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="23_Radiation3D.html">Radiation - 3D</a></h2></td>
+          <td> <div align="left">Spherical electromagnetic wavefront from an accelerating source in 3D. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="24_crystal_planes.html">Crystal Planes</a></h2></td>
+          <td> <div align="left">A model of a crystal solid showing crystal planes. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="24_interf_both.html">Interference</a></h2></td>
+          <td> <div align="left">Interference from two sinusoidal waves. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="24_powder_xray.html">X-Ray Powder</a></h2></td>
+          <td> <div align="left">Formation of x-ray powder rings. </div></td>
+        </tr>
+        <tr>
+          <td><h2 align="left" style="font-size: small"><a href="spark_mean_free_path.html">Mean Free Path</a></h2></td>
+          <td> <div align="left">A model of an ideal gas with hard-sphere collisions showing the mean free path of one atom. </div></td>
+        </tr>
+      </table>
+      <h3>&nbsp;</h3>
+    </div> 
+  </div>  
+  <div id="siteInfo">    <a href="mailto:mmalahe@gmail.com">Contact Us</a> | &copy;2007-2008
+    UCT Physics Department </div> 
+</div> 
+<!--end pagecell1--> 
+
+<!-- Initial states of side navigation -->
+<script type="text/javascript">
+    <!--
+      var menuitem1 = new menu(7,1,"0px");
+	  var menuitem2 = new menu(7,2,"0px");
+    // -->
+    </script> 
+</body>
+</html>

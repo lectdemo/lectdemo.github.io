@@ -1,0 +1,505 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- DW6 -->
+
+<!-- 
+Based on the Macromedia Dreamweaver MX 2004 design "Halo Left Nav" 
+Created by Michael Malahe - mmalahe@gmail.com 
+-->
+
+
+<!-- 
+---HEAD---
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Demonline - Lecture Demos</title>
+<link rel="stylesheet" href="images/uct_phy.css" type="text/css">
+
+<!--MENU SCRIPT-->
+<script type="text/javascript">
+var time = 3000;
+var numofitems = 4; //Number of left-hand navigation menu items
+standard = "10px" //Standard font size
+
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "sec"+thisitem;
+  divname="related"+thisitem;  
+  this.numberofmenuitems = numofitems;
+  this.caller = document.getElementById(callname);
+  this.thediv = document.getElementById(divname);
+  this.thediv.style.fontSize = startstate;
+}
+
+//menu methods
+function ehandler(event,theobj){
+	if (event == 1) {//mouse click
+	    var init_state = theobj.thediv.style.fontSize;
+  		if (init_state == "0px"){
+  			theobj.thediv.style.fontSize = standard;
+  		}
+  		else if (init_state == standard){
+  			theobj.thediv.style.fontSize = "0px";
+  		}
+	}
+}
+				
+// -->
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+
+
+<!-- 
+---BODY ---
+-->
+<body> 
+<div id="breadCrumb"> 
+  <div align="center"><a href="index.html">lecture demos</a> | <a href="../virtual/index.html">vpython scripts</a> | <a href="../index.html">demonline home</a> | <a href="http://www.phy.uct.ac.za">uct physics home</a> </div>
+</div> 
+<div id="pagecell1"> 
+  <!--pagecell1--> 
+  <div id="pageName"> 
+    <h2 align="center">Mechanics Index </h2> 
+     </strong></div> 
+  <div id="pageNav"> 
+  	
+	<div class="relatedLinks"> 
+      <h1>Demo Index</h1>
+    </div>
+	
+	<div id="sectionLinks"> 
+      <a href = "index-m.html" id="sec1" class="seclink" title="Mechanics Index">Mechanics</a> 
+	</div> 
+	
+		<div id="sectionLinks"> 
+	<a href="index-e.html" id="sec2" class="seclink" title="Electromagnetism Index">Electromagnetism</a>
+    </div>
+	
+    	<div id="sectionLinks"> 
+	<a href="index-l.html" id="sec3" class="seclink" title="Light and Waves Index">Light and Waves</a>
+    </div>
+	
+    	<div id="sectionLinks"> 
+	<a href="index-h.html" id="sec4" class="seclink" title="Thermodynamics Index">Thermodynamics and Matter </a>    </div>
+	
+        <div class="subglobalNav"> 
+      This section of the site is currently under construction.
+	</div> 
+  </div> 
+  <div id="content"> 
+    <div class="feature"> 
+	<br>
+	The mechanics demonstrations are on Level 2. <br>
+	<br>
+      <table width="0%"  border="0" cellpadding=" " cellspacing=" ">
+<tr bgcolor="#CCCCCC">
+<th scope="col"><div align="left" style="font-size: small">Name</div></th>
+<th scope="col"><div align="left">Purpose</div></th>
+</tr>
+<tr>
+<td width="213" scope="col"><h2 align="left" style="font-size: small"><a href="m001.html">M1:Crystal Structure - Salt</a></h2></td>
+<td width="643" scope="col"><div align="left">Illustrates a model of atoms in a crystal lattice.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m002.html">M2:Crystal Structure - Carbon</a></h2></td>
+<td><div align="left">Illustrates a model of atoms in a crystal lattice.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m010.html">M10:Gravitational Acceleration</a></h2></td>
+<td><div align="left">Demonstrates that acceleration due to gravity is not dependent on mass.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m011.html">M11:Guinea and Feather</a></h2></td>
+<td><div align="left">Demonstrates that acceleration due to gravity is not dependent on mass or shape.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m012.html">M12:Gun That Never Misses</a></h2></td>
+<td><div align="left">This demonstrates the independence of the horizontal and vertical components of motion with a less intuitive setup.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m013.html">M13:Pop and Drop</a></h2></td>
+<td><div align="left">This demonstrates the independence of the vertical and horizontal components of velocity.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m014.html">M14:Rolling Cart Catches Ball</a></h2></td>
+<td><div align="left">This demonstrates the independence of the vertical and horizontal components of velocity.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m015.html">M15:Centre of Mass</a></h2></td>
+<td><div align="left">This illustrates the concept of centre of mass.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m016.html">M16:Principle of Moments</a></h2></td>
+<td><div align="left">Demonstrates the principle of moments.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m017.html">M17:Centre of Gravity</a></h2></td>
+<td><div align="left">Demonstrates the concept of centre of gravity.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m018.html">M18:Plunger</a></h2></td>
+<td><div align="left">Demonstrates the concept of the centre of mass frame.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m019.html">M19:Double Cone</a></h2></td>
+<td><div align="left">This illustrates the concept of centre of mass with a less intuitive setup.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m020.html">M20:Inertial Reference Frame</a></h2></td>
+<td><div align="left">Demonstrates the concept of an inertial reference frame.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m021.html">M21:Ball Falling into Cup</a></h2></td>
+<td><div align="left">Demonstrates the &quot;absence&quot; of the graviational force in the reference frame of a free-falling system.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m022.html">M22:Slinky</a></h2></td>
+<td><div align="left">Entertainment</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m023.html">M23:Falling Chimney</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m030.html">M30:Inertia</a></h2></td>
+<td><div align="left">Demonstrates the concept of inertia.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m040.html">M40:Parallelogram of Forces</a></h2></td>
+<td><div align="left">Demonstrates the parallelogram rule for summing vectors.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m041.html">M41:Resultant of Vectors in 3D</a></h2></td>
+<td><div align="left">This shows that equilibrium of forces takes place in 3 dimensions.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m042.html">M42:Components of Forces</a></h2></td>
+<td><div align="left">Demonstrates the independence of the compenents of forces.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m043.html">M43:Aeroplane on a String</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m044.html">M44:Tangential Motion</a></h2></td>
+<td><div align="left">Demonstrates Newton's 1st law.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m046.html">M46:Spheres on Inclined Plane</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m047.html">M47:Stability of a Ladder</a></h2></td>
+<td><div align="left">This is an example of three forces in equilibrium.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m048.html">M48:Roller on Inclined Plane</a></h2></td>
+<td><div align="left">Demonstrates that rolling friction is much smaller than sliding friction.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m049.html">M49:Loaded Block on Inclined Plane</a></h2></td>
+<td><div align="left">Shows in principle how the coefficients of static and kinetic friction can be determined.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m050.html">M50:Block on Inclined Plane</a></h2></td>
+<td><div align="left">Demonstrates friction.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m060.html">M60:Varying Tension in String</a></h2></td>
+<td><div align="left">Demonstrates varying tension due to centripetal acceleration.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m061.html">M61:Pulley Systems</a></h2></td>
+<td><div align="left">Demonstrates various pulleys.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m062.html">M62:Resolution of Forces - Inclined Plane</a></h2></td>
+<td><div align="left">Shows the forces exerted on a block resting on an inclined plane.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m066.html">M66:Differential Pulley</a></h2></td>
+<td><div align="left">Demonstrates the use of a differential pulley.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m067.html">M67:Screwjack</a></h2></td>
+<td><div align="left">Illustrates the principle that the work done in lifting a large mass a short distance is equivalent to the work done by a small force over a large distance.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m068.html">M68:Equal Masses on Double Pulley</a></h2></td>
+<td><div align="left">Illustrates Newton's 1st law in a less intuitive setup.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m069.html">M69:Adjustable Pulley</a></h2></td>
+<td><div align="left">A pulley with adjustable height.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m080.html">M80:Trolleys</a></h2></td>
+<td><div align="left">Demonstrates elastic collisions.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m081.html">M81:Newton's Cradle</a></h2></td>
+<td><div align="left">Demonstrates the conservation of momentum and kinetic energy in elastic collisions.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m082.html">M82:Small Newton's Cradle</a></h2></td>
+<td><div align="left">Demonstrates the conservation of momentum and kinetic energy in elastic collisions.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m083.html">M83:Balls on Rails</a></h2></td>
+<td><div align="left">Demonstrates the conservation of momentum and kinetic energy in elastic collisions.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m084.html">M84:Inelastic Collisions</a></h2></td>
+<td><div align="left">Demonstrates how momentum and kinetic energy are not conserved in inelastic collisions.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m085.html">M85:Conservation of Momentum</a></h2></td>
+<td><div align="left">Demonstrates conservation of momentum.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m086.html">M86:Elastic and Inelastic Collisions</a></h2></td>
+<td><div align="left">Demonstrates the difference between elastic and inelastic collisions.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m087.html">M87:Superballs</a></h2></td>
+<td><div align="left">To show objects with high coefficients of restitution.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m088.html">M88:Conservation of Momentum</a></h2></td>
+<td><div align="left">Demonstrates conservaiton of momentum with a less intuitive setup.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m089.html">M89:Air Track</a></h2></td>
+<td><div align="left">Demonstrates elastic collisons.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m090.html">M90:Rocket and Block</a></h2></td>
+<td><div align="left">Demonstrates transfer of energy in elastic and inelastic collisions.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m091.html">M91:Air Table</a></h2></td>
+<td><div align="left">Demonstrates elastic collisions.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m092.html">M92:Water Rocket</a></h2></td>
+<td><div align="left">Demonstrates how conservation of momentum is behind the working of rockets.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m093.html">M93:Balls on Tracks</a></h2></td>
+<td><div align="left">An interesting and somewhat counter-intuitive experiment.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m100.html">M100:Attwood's Machine</a></h2></td>
+<td><div align="left">An interesting rotational device.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m101.html">M101:Crowbar</a></h2></td>
+<td><div align="left">Illustrates the idea of moments.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m102.html">M102:Rotational Motion</a></h2></td>
+<td><div align="left">Demonstrates various principles of rotational motion.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m103.html">M103:Conservation of Momentum: Jet Propulsion</a></h2></td>
+<td><div align="left">Demonstrates conservation of momentum.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m104.html">M104:Centrifugal Force</a></h2></td>
+<td><div align="left">Demonstrates the centripetal force on and centrifugal reaction by a constrained rotated object.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m105.html">M105:Rotating Candles</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m106.html">M106:Large Gyroscope</a></h2></td>
+<td><div align="left">Demonstrates various rotational principles.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m108.html">M108:Angular Momentum</a></h2></td>
+<td><div align="left">Demonstrates various rotational principles.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m109.html">M109:Little Gyroscopes</a></h2></td>
+<td><div align="left">Shows the working of gyroscopes.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m110.html">M110:Rotational Motion</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m114.html">M114:Celts</a></h2></td>
+<td><div align="left">A wierd rotational device for interest.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m120.html">M120:Hooke's Law</a></h2></td>
+<td><div align="left">Demonstrates Hooke's Law.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m121.html">M121:Elastic Limit</a></h2></td>
+<td><div align="left">Demonstrates Hooke's Law and the elastic limit of a material.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m122.html">M122:Torsion &amp; Modulus of Rigidity</a></h2></td>
+<td><div align="left">Demonstrates the concepts of torsion and the modulus of rigidity.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m130.html">M130:Harmonic Motion</a></h2></td>
+<td><div align="left">Shows the equivalence of two types of simple harmonic motion.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m131.html">M131:Cantilever Oscillations</a></h2></td>
+<td><div align="left">Demonstrates free-end oscillations.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m132.html">M132:Ball on a Spring</a></h2></td>
+<td><div align="left">A simple oscillator.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m133.html">M133:Oscillating Ball on Slope</a></h2></td>
+<td><div align="left">Demonstration of harmonic motion.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m140.html">M140:Simple Pendulums</a></h2></td>
+<td><div align="left">Simple pendulums.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m141.html">M141:Period of Oscillation</a></h2></td>
+<td><div align="left">Shows that the period of oscillation is independent of mass but proportional to the length of string.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m142.html">M142:Whirligig Pendulum</a></h2></td>
+<td><div align="left">An unusual pendulum.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m143.html">M143:Galileo's Pendulum</a></h2></td>
+<td><div align="left">Sshows the transformation from potential energy to kinetic energy and back again.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m144.html">M144:Ballistic Pendulum</a></h2></td>
+<td><div align="left">Demonstrates conservation of energy.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m145.html">M145:Probabalistic Pendulum</a></h2></td>
+<td><div align="left">To show a system that is highly sensitive to inital conditions.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m146.html">M146:Ring Pendulum</a></h2></td>
+<td><div align="left">Shows that a ring and a straight pendulum have the same period if the length of the pendulum is equal to the diameter of the ring.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m147.html">M147:Different Length Pendulums</a></h2></td>
+<td><div align="left">Demonstrates how the period of a pendulum depends on its length.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m148.html">M148:Oscillating Lamina</a></h2></td>
+<td><div align="left">Demonstrates how changing the moment of inertia affects the frequency of oscillation.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m149.html">M149:Double Pendulum</a></h2></td>
+<td><div align="left">This is an example of a chaotic system that is highly sensitive to initial conditions.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m150.html">M150:Two Rod Pendulums</a></h2></td>
+<td><div align="left">A comparison of the acclerations of pendulums with and without masses attached to their lower ends.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m151.html">M151:Giant Pendulum</a></h2></td>
+<td><div align="left">This demonstrates conservation of energy in a dramatic way.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m160.html">M160:Single Wilberforce Pendulum</a></h2></td>
+<td><div align="left">Shows the normal modes of a Wilberforce pendulum.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m161.html">M161:Adjustable Wilberforce Pendulum</a></h2></td>
+<td><div align="left">This demonstrates the effect of changing the moment of inertia on the beat frequency of a Wilberforce pendulum.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m162.html">M162:Simple Coupled Oscillator</a></h2></td>
+<td><div align="left">Demonstration of a coupled oscillator.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m163.html">M163:Oscillators Coupled by Mass</a></h2></td>
+<td><div align="left">Demonstration of coupled oscillators.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m164.html">M164:Oscillators Coupled by Rod</a></h2></td>
+<td><div align="left">Demonstration of coupled oscillators.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m165.html">M165:Oscillators Coupled by Bar</a></h2></td>
+<td><div align="left">Demonstration of coupled oscillators.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m166.html">M166:Pair of Wilberforce Pendulums</a></h2></td>
+<td><div align="left">Demonstration of coupled oscillators.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m170.html">M170:Resonance</a></h2></td>
+<td><div align="left">Demonstrates resonance.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m171.html">M171:Resonance Oscillations</a></h2></td>
+<td><div align="left">Demonstration of resonance.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m180.html">M180:Chemical Balance</a></h2></td>
+<td><div align="left">Used to illustrate the sensitivity and stability of a chemical balance.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m181.html">M181:Large Vernier Calipers</a></h2></td>
+<td><div align="left">Large model of Vernier calipers</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m182.html">M182:Large Slide Rule</a></h2></td>
+<td><div align="left">A large slide rule.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m183.html">M183:Model of a Vernier Scale</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m184.html">M184:Micrometer Screwgauge</a></h2></td>
+<td><div align="left">A micrometer screw-gauge is a tool used to make fine measurements.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m185.html">M185:Spherometer</a></h2></td>
+<td><div align="left">A spherometer is a tool used to make fine measurements</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="m186.html">M186:Vector Arrows</a></h2></td>
+<td><div align="left">Use them to demonstrate vectors in three dimensions.</div></td>
+</tr>
+</table>
+	</div> 
+  </div>  
+  <div id="siteInfo">    <a href="mailto:mmalahe@gmail.com">Contact Us</a> | &copy;2007-2008
+    UCT Physics Department </div> 
+</div> 
+<!--end pagecell1--> 
+
+<!-- Initial states of side navigation -->
+<script type="text/javascript">
+    <!--
+      var menuitem1 = new menu(4,1,"0px");
+	  var menuitem2 = new menu(4,2,"0px");
+	  var menuitem3 = new menu(4,3,"0px");
+	  var menuitem4 = new menu(4,4,"0px");
+    // -->
+    </script> 
+</body>
+</html>

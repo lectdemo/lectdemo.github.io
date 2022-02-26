@@ -1,0 +1,382 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- DW6 -->
+
+<!-- 
+Based on the Macromedia Dreamweaver MX 2004 design "Halo Left Nav" 
+Created by Michael Malahe - mmalahe@gmail.com 
+-->
+
+
+<!-- 
+---HEAD---
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Demonline - Lecture Demos</title>
+<link rel="stylesheet" href="images/uct_phy.css" type="text/css">
+
+<!--MENU SCRIPT-->
+<script type="text/javascript">
+var time = 3000;
+var numofitems = 4; //Number of left-hand navigation menu items
+standard = "10px" //Standard font size
+
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "sec"+thisitem;
+  divname="related"+thisitem;  
+  this.numberofmenuitems = numofitems;
+  this.caller = document.getElementById(callname);
+  this.thediv = document.getElementById(divname);
+  this.thediv.style.fontSize = startstate;
+}
+
+//menu methods
+function ehandler(event,theobj){
+	if (event == 1) {//mouse click
+	    var init_state = theobj.thediv.style.fontSize;
+  		if (init_state == "0px"){
+  			theobj.thediv.style.fontSize = standard;
+  		}
+  		else if (init_state == standard){
+  			theobj.thediv.style.fontSize = "0px";
+  		}
+	}
+}
+				
+// -->
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+
+
+<!-- 
+---BODY ---
+-->
+<body> 
+<div id="breadCrumb"> 
+  <div align="center"><a href="index.html">lecture demos</a> | <a href="../virtual/index.html">vpython scripts</a> | <a href="../index.html">demonline home</a> | <a href="http://www.phy.uct.ac.za">uct physics home</a> </div>
+</div> 
+<div id="pagecell1"> 
+  <!--pagecell1--> 
+  <div id="pageName"> 
+    <h2 align="center">Thermodynamics and Matter Index </h2> 
+     </strong></div> 
+  <div id="pageNav"> 
+  	
+	<div class="relatedLinks"> 
+      <h1>Demo Index</h1>
+    </div>
+	
+	<div id="sectionLinks"> 
+      <a href = "index-m.html" id="sec1" class="seclink" title="Mechanics Index">Mechanics</a> 
+	</div> 
+	
+		<div id="sectionLinks"> 
+	<a href="index-e.html" id="sec2" class="seclink" title="Electromagnetism Index">Electromagnetism</a>
+    </div>
+	
+    	<div id="sectionLinks"> 
+	<a href="index-l.html" id="sec3" class="seclink" title="Light and Waves Index">Light and Waves</a>
+    </div>
+	
+    	<div id="sectionLinks"> 
+	<a href="index-h.html" id="sec4" class="seclink" title="Thermodynamics Index">Thermodynamics and Matter </a>
+    </div>
+	
+        <div class="subglobalNav"> 
+      This section of the site is currently under construction.
+	</div> 
+  </div> 
+  <div id="content"> 
+    <div class="feature">
+	  <p><br>
+	    The thermodynamics and matter demonstrations are on Level 4.</p>
+	  <p><table width="0%"  border="0" cellpadding=" " cellspacing=" ">
+<tr bgcolor="#CCCCCC">
+<th scope="col"><div align="left" style="font-size: small">Name</div></th>
+<th scope="col"><div align="left">Purpose</div></th>
+</tr>
+<tr>
+<td width="213" scope="col"><h2 align="left" style="font-size: small"><a href="h1.html">H1: Thermal Expansion</a></h2></td>
+<td width="643" scope="col"><div align="left">Demonstrates thermal expansion.</div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="h2.html">H2:Contraction on Cooling</a></h2></td>
+  <td><div align="left">To show force exerted on contraction.</div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="h3.html">H3:Varying thermal expansion</a></h2></td>
+  <td><div align="left">Shows difference in expansion between materials.</div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="h6.html">H6:Thermal Expansion of Liquids</a></h2></td>
+  <td><div align="left"></div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="h7.html">H7:Thermal Expansion</a></h2></td>
+  <td><div align="left"></div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="h8.html">H8:Thermal Expansion</a></h2></td>
+  <td><div align="left">Shows thermal expansion.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h12.html">H12:Regelation of Ice</a></h2></td>
+<td><div align="left">Shows metling of ice to due pressure.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h15.html">H15:Cooling by Evaporation</a></h2></td>
+<td><div align="left">Shows cooling by evaporation.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h17.html">H17:Vapour pressure</a></h2></td>
+<td><div align="left">Demonstrates increased pressure due to vaporisation.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h18.html">H18:</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h20.html">H20:Cloud Chamber</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h21.html">H21:Dippy Dillies</a></h2></td>
+<td><div align="left">Nice demonstration of evaporative cooling.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h24.html">H24:Critical Point of C02</a></h2></td>
+<td><div align="left">Shows the compressibility at the critical point.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h25.html">H25:Hygrometers</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h31.html">H31:Thermal Conductivity</a></h2></td>
+<td><div align="left">Shows the varying thermal conductivity of different materials.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h32.html">H32:Thermal Conductivity</a></h2></td>
+<td><div align="left">Demonstrates the principle of Miner's lamp.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h33.html">H33:Convection</a></h2></td>
+<td><div align="left">Model of hot water heating system.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h36.html">H36:Radiation</a></h2></td>
+<td><div align="left">Demonstrates thermal radiation.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h37.html">H37:Heat Absorption</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h38.html">H38:Radiation</a></h2></td>
+<td><div align="left">Shows the reflection, absorption and emission properties of materials.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h39.html">H39:Radiation</a></h2></td>
+<td><div align="left">Shows an interesting radiation-based thermometer.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h42.html">H42:Radiometer</a></h2></td>
+<td><div align="left">Used to measure radiant flux.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h45.html">H45:Thermocouple</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h46.html">H46:Radiation: Diathermancy</a></h2></td>
+<td><div align="left">To show that a solution of Iodine in carbon disulphide, opaque to visible light, is transparent to infrared.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h47.html">H47:Indicators of Temperature</a></h2></td>
+<td><div align="left">Interesting indicators of temperature.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h48.html">H48:Berthelot Apparatus</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h49.html">H49:Bunsen Ice Calorimeter</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h50.html">H50:Heat Engines</a></h2></td>
+<td><div align="left">Demonstration of a clever heat engine.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h51.html">H51:Strain: Bologne Phials</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="h52.html">H52:Portable De-ioniser</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td width="213" scope="col"><h2 align="left" style="font-size: small"><a href="hy1.html">HY1:Upthrust on Floating Body</a></h2></td>
+<td width="643" scope="col"><div align="left">Shows that upthrust increases as immersed volume increases.</div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="hy2.html">HY2:Liquid Levels</a></h2></td>
+  <td><div align="left"></div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="hy5.html">HY5:Fluid Pressure</a></h2></td>
+  <td><div align="left">Shows the dependence of fluid pressure at a point on the weight of fluid above it.</div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="hy6.html">HY6:Hydrostatic Paradox: Pascal&rsquo;s Vases</a></h2></td>
+  <td><div align="left"></div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="hy7.html">HY7:Archimedes&rsquo; principle</a></h2></td>
+  <td><div align="left"></div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="hy8.html">HY8:Upthrust</a></h2></td>
+  <td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="hy10.html">HY10:Buoys</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="hy11.html">HY11:Cartesian Diver</a></h2></td>
+<td><div align="left">Demonstrates the properties of air and water.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="hy12.html">HY12:Vortex Action</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td width="213" scope="col"><h2 align="left" style="font-size: small"><a href="hd11.html">HD4:Torricelli’s Law of Efflux</a></h2></td>
+<td width="643" scope="col"><div align="left">Shows dependence of liquid pressure at a point on the volume of liquid above it.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="hd4.html">HD4:Relaxation Oscillations</a></h2></td>
+<td><div align="left">Demonstrates relaxation oscillations.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="hd5.html">HD5:Relaxation Oscillations</a></h2></td>
+<td><div align="left">Demonstrates relaxation oscillations.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="hd6.html">HD6:Buoyancy - Shape</a></h2></td>
+<td><div align="left">Shows the importance of shape in buoyancy.</div></td>
+</tr>
+<tr>
+<td width="213" scope="col"><h2 align="left" style="font-size: small"><a href="ap1.html">AP1:Magdeberg Hemispheres</a></h2></td>
+<td width="643" scope="col"><div align="left">Shows the strength of atmospheric pressure.</div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="ap3.html">AP3:Pressure gauges</a></h2></td>
+  <td><div align="left">Used to measure air pressure.</div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="ap4.html">AP4:Air Weighing</a></h2></td>
+  <td><div align="left">Weighing air.</div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="ap7.html">AP7:The Bernoulli Effect</a></h2></td>
+  <td><div align="left">Demonstrates the force due to pressure difference.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="ap10.html">AP10:Manometer</a></h2></td>
+<td><div align="left">Used for atmospheric pressure measurements.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="ap11.html">AP11:Bell Jars</a></h2></td>
+<td><div align="left">Accesory to demonstrations.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="ap12.html">AP12:Hand Pump</a></h2></td>
+<td><div align="left">Used for evacuation of vessels.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="ap13.html">AP13:Glass Syringes</a></h2></td>
+<td><div align="left">Accesory to demonstrations.</div></td>
+</tr>
+<tr>
+<td width="213" scope="col"><h2 align="left" style="font-size: small"><a href="ad1.html">AD1:Bellows and Blower</a></h2></td>
+<td width="643" scope="col"><div align="left">Accesory to demonstrations.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="ad2.html">AD2:Venturi</a></h2></td>
+<td><div align="left">Shows the distribution of pressure through a non-uniform cross-section.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="ad6.html">AD6:Pumps</a></h2></td>
+<td><div align="left">Shows the mechanism of diffusion pumps.</div></td>
+</tr>
+<tr>
+<td width="213" scope="col"><h2 align="left" style="font-size: small"><a href="s1.html">S1:Propagation Needs a Medium</a></h2></td>
+<td width="643" scope="col"><div align="left"></div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="s2.html">S2:Organ Pipes</a></h2></td>
+  <td><div align="left"></div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="s3.html">S3:&ldquo;Gauze Tones&rdquo; - Beats</a></h2></td>
+  <td><div align="left"></div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="s5.html">S5:Doppler effect</a></h2></td>
+  <td><div align="left">Demonstrates the Doppler effect.</div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="s7.html">S7:Galton&rsquo;s Whistle and Sensitive Flame</a></h2></td>
+  <td><div align="left"></div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="s8.html">S8:Periodic Pulses</a></h2></td>
+  <td><div align="left"></div></td>
+</tr>
+<tr>
+  <td><h2 align="left" style="font-size: small"><a href="s9.html">S9:The Siren</a></h2></td>
+  <td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="s10.html">S10:Resonance</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="s12.html">S12:Tuning Forks</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+</table>
+	   </p>
+    </div> 
+  </div>  
+  <div id="siteInfo">    <a href="mailto:mmalahe@gmail.com">Contact Us</a> | &copy;2007-2009
+    UCT Physics Department </div> 
+</div> 
+<!--end pagecell1--> 
+
+<!-- Initial states of side navigation -->
+<script type="text/javascript">
+    <!--
+      var menuitem1 = new menu(4,1,"0px");
+	  var menuitem2 = new menu(4,2,"0px");
+	  var menuitem3 = new menu(4,3,"0px");
+	  var menuitem4 = new menu(4,4,"0px");
+    // -->
+    </script> 
+</body>
+</html>

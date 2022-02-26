@@ -1,0 +1,406 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- DW6 -->
+
+<!-- 
+Based on the Macromedia Dreamweaver MX 2004 design "Halo Left Nav" 
+Created by Michael Malahe - mmalahe@gmail.com 
+-->
+
+
+<!-- 
+---HEAD---
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Demonline - Lecture Demos</title>
+<link rel="stylesheet" href="images/uct_phy.css" type="text/css">
+
+<!--MENU SCRIPT-->
+<script type="text/javascript">
+var time = 3000;
+var numofitems = 4; //Number of left-hand navigation menu items
+standard = "10px" //Standard font size
+
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "sec"+thisitem;
+  divname="related"+thisitem;  
+  this.numberofmenuitems = numofitems;
+  this.caller = document.getElementById(callname);
+  this.thediv = document.getElementById(divname);
+  this.thediv.style.fontSize = startstate;
+}
+
+//menu methods
+function ehandler(event,theobj){
+	if (event == 1) {//mouse click
+	    var init_state = theobj.thediv.style.fontSize;
+  		if (init_state == "0px"){
+  			theobj.thediv.style.fontSize = standard;
+  		}
+  		else if (init_state == standard){
+  			theobj.thediv.style.fontSize = "0px";
+  		}
+	}
+}
+				
+// -->
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+
+
+<!-- 
+---BODY ---
+-->
+<body> 
+<div id="breadCrumb"> 
+  <div align="center"><a href="index.html">lecture demos</a> | <a href="../virtual/index.html">vpython scripts</a> | <a href="../index.html">demonline home</a> | <a href="http://www.phy.uct.ac.za">uct physics home</a> </div>
+</div> 
+<div id="pagecell1"> 
+  <!--pagecell1--> 
+  <div id="pageName"> 
+    <h2 align="center">Electromagnetism Index </h2> 
+     </strong></div> 
+  <div id="pageNav"> 
+  	
+	<div class="relatedLinks"> 
+      <h1>Demo Index</h1>
+    </div>
+	
+	<div id="sectionLinks"> 
+      <a href = "index-m.html" id="sec1" class="seclink" title="Mechanics Index">Mechanics</a> 
+	</div> 
+	
+		<div id="sectionLinks"> 
+	<a href="index-e.html" id="sec2" class="seclink" title="Electromagnetism Index">Electromagnetism</a>
+    </div>
+	
+    	<div id="sectionLinks"> 
+	<a href="index-l.html" id="sec3" class="seclink" title="Light and Waves Index">Light and Waves</a>
+    </div>
+	
+    	<div id="sectionLinks"> 
+	<a href="index-h.html" id="sec4" class="seclink" title="Thermodynamics Index">Thermodynamics and Matter</a>    </div>
+	
+        <div class="subglobalNav"> 
+      This section of the site is currently under construction.
+	</div> 
+  </div> 
+  <div id="content">
+    <div class="feature">
+	<br>
+	The electromagnetism demonstrations are on Level 1 (Behind Lecture Theatre A).
+	<br>
+	<br>
+      <table width="0%"  border="0" cellpadding=" " cellspacing=" ">
+<tr bgcolor="#CCCCCC">
+<th scope="col"><div align="left" style="font-size: small">Name</div></th>
+<th scope="col"><div align="left">Purpose</div></th>
+</tr>
+<tr>
+<td width="213" scope="col"><h2 align="left" style="font-size: small"><a href="em001.html">EM1:Galvanometer</a></h2></td>
+<td width="643" scope="col"><div align="left">Measures voltage/current.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em002.html">EM2:Audio Oscillator</a></h2></td>
+<td><div align="left">Power Supply.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em003.html">EM3:Variac</a></h2></td>
+<td><div align="left">Power Supply.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em021.html">EM21:Charging By Induction</a></h2></td>
+<td><div align="left">Shows charging by induction.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em022.html">EM22:Faraday&rsquo;s Ice Pail</a></h2></td>
+<td><div align="left">Shows distribution of charge.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em023.html">EM23:Charge On Concentric Shells</a></h2></td>
+<td><div align="left">Shows the distribution of charge on concentric shells.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em024.html">EM24:Charge On Irregular Shapes</a></h2></td>
+<td><div align="left">Shows the distribution of charge on irregularly shaped objects.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em025.html">EM25:Charging By Induction 2</a></h2></td>
+<td><div align="left">Shows charging by induction.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em026.html">EM26:Van de Graaf Generators</a></h2></td>
+<td><div align="left">Generates static electricity.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em027.html">EM27:Box Of Electrostatic Demos</a></h2></td>
+<td><div align="left">Demonstrates concepts in electrostatics.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em028.html">EM28:Capacitance</a></h2></td>
+<td><div align="left">Demonstrates the concept of capacitance.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em029.html">EM29:Capacitor With Dielectric</a></h2></td>
+<td><div align="left">Shows the effect of a dielectric on capacitance.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em030.html">EM30:Capacitor With Ball</a></h2></td>
+<td><div align="left">Simple electrostatics demonstration.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em031.html">EM31:Spark Gaps</a></h2></td>
+<td><div align="left">Amusing electrostatics demonstration.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em032.html">EM32:Variable Capacitors</a></h2></td>
+<td><div align="left">Shows the effect of plate distance on capacitance.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em033.html">EM33:Kelvin Current Balance</a></h2></td>
+<td><div align="left">For interest's sake only.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em034.html">EM34:The Electrostatic Field</a></h2></td>
+<td><div align="left">Shows the direction of the electrostatic field.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em035.html">EM35:The Electrophorous</a></h2></td>
+<td><div align="left">Illustrates the basic principle of many electrostatic machines.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em036.html">EM36:Triboelectricity</a></h2></td>
+<td><div align="left">Basic experiments on electrification by contact and friction.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em037.html">EM37:Swinging Pith Ball</a></h2></td>
+<td><div align="left">Simple electrostatics demonstration.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em038.html">EM38:Proof Planes</a></h2></td>
+<td><div align="left">Used for transferring charge.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em039.html">EM39:Gold Leaf Electroscopes</a></h2></td>
+<td><div align="left">Used to measure potential difference.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em040.html">EM40:Whimshurst Machines</a></h2></td>
+<td><div align="left">Used to generate static electricity.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em051.html">EM51:Resistance</a></h2></td>
+<td><div align="left">Shows the difference between resistance in series and resistance in parallel.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em055.html">EM55:Back EMF Of Motor</a></h2></td>
+<td><div align="left">Demonstrates back EMF.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em057.html">EM57:Time-Dependent Currents</a></h2></td>
+<td><div align="left">Shows that a capacitor &ldquo;passes&rdquo; alternating current but not direct current.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em060.html">EM60:Time Constant</a></h2></td>
+<td><div align="left">Demonstrates the time constant of a capacitor.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em061.html">EM61:Variable Capacitor</a></h2></td>
+<td><div align="left">Enables varying capacitance for demonstrations.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em062.html">EM62:Giant Capacitor</a></h2></td>
+<td><div align="left">A large capacitor.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em063.html">EM63:1 Farad Capacitor</a></h2></td>
+<td><div align="left">A capacitor with high capacitance.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em064.html">EM64:Capacitor In A Glass</a></h2></td>
+<td><div align="left">Unusual capacitor.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em065.html">EM65:Canned Capacitors</a></h2></td>
+<td><div align="left">A series of capacitors.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em066.html">EM66:Box Of Capacitors</a></h2></td>
+<td><div align="left">Shows a variety of capacitors.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em093.html">EM93:Alternating Currents</a></h2></td>
+<td><div align="left">Demonstrates parallel resonance.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em094.html">EM94:Tesla Coil</a></h2></td>
+<td><div align="left">Produces extremely high voltage build-up.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em096.html">EM96:LR Circuit</a></h2></td>
+<td><div align="left">Demonstrates the current variation in an LR circuit.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em097.html">EM97:Self-Inductance</a></h2></td>
+<td><div align="left">Shows self-inductance.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em098.html">EM98:Electrical Beats</a></h2></td>
+<td><div align="left">Demonstrates electrical beating.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em100.html">EM100:Resonance</a></h2></td>
+<td><div align="left">Demonstrates electrical resonance.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em121.html">EM121:Step-Up Transformer</a></h2></td>
+<td><div align="left">Impressive high-voltage demonstration.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em125.html">EM125:Parallel Currents</a></h2></td>
+<td><div align="left">Shows the attraction and repulstion of parallel currents.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em126.html">EM126:Step-Down Transformer</a></h2></td>
+<td><div align="left">Demonstration of low voltage, high current conditions.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em127.html">EM127:Bulbs Light Via Inductance</a></h2></td>
+<td><div align="left">An entertaining demonstration of inductance.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em128.html">EM128:Induction in a Coil</a></h2></td>
+<td><div align="left">Shows electromagnetic induction in a coil of wire.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em129.html">EM129:Self-Inductor</a></h2></td>
+<td><div align="left">Shows self-inductance.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em130.html">EM130:Magnetic Braking</a></h2></td>
+<td><div align="left">Shows the effect of eddy currents.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em131.html">EM131:Induction: Coil-to-Coil</a></h2></td>
+<td><div align="left">Shows induction from one coil to another.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em132.html">EM132:Induction: Spinning Magnet</a></h2></td>
+<td><div align="left">Shows induction from a changing magnetic field.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em133.html">EM133:Earth Inductors</a></h2></td>
+<td><div align="left">Shows induction using the Earth's magnetic field.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em141.html">EM141:Galvanometer</a></h2></td>
+<td><div align="left">Shows the mechanism of a galvanometer.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em142.html">EM142:Magnetic Field in Loop</a></h2></td>
+<td><div align="left">Shows the direction of the magnetic field in a current-carrying loop.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em143.html">EM143:Lodestone</a></h2></td>
+<td><div align="left">Shows a naturally magnetic material.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em144.html">EM144:North and South Poles</a></h2></td>
+<td><div align="left">Shows the dipole nature of magnets.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em145.html">EM145:Mahomet's Coffin</a></h2></td>
+<td><div align="left">Shows repulsion of like poles of a magnet.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em146.html">EM146:Mahomet's Coffin - Rings</a></h2></td>
+<td><div align="left">Shows repulsion of like poles of a magnet.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em147.html">EM147:Magnetic Field - Bar</a></h2></td>
+<td><div align="left">Shows the magnetic field of a bar magnet.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em148.html">EM148:Induced Magnetisation</a></h2></td>
+<td><div align="left">Demonstrates induced magnetisation.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em149.html">EM149:Magnetic Field - Current</a></h2></td>
+<td><div align="left">Shows the magnetic field due to a current-carrying wire.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em150.html">EM150:Sticks</a></h2></td>
+<td><div align="left">Demonstrates the magnetic force.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em151.html">EM151:Oersted's Experiment</a></h2></td>
+<td><div align="left">Shows the direction of the magnetic field around a current-carrying wire.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em152.html">EM152:Force on Moving Charge</a></h2></td>
+<td><div align="left">Shows the force on a moving charge in a magnetic field.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em153.html">EM153:Faraday Cage</a></h2></td>
+<td><div align="left">Shows wavelength-dependent transmission of electromagnetic waves.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em155.html">EM155:Hysteresis</a></h2></td>
+<td><div align="left">Demonstrates hysteresis.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em156.html">EM156:Curie Temperature</a></h2></td>
+<td><div align="left">Demonstrates the Curie point.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em157.html">EM157:Magnetic Field - Disc</a></h2></td>
+<td><div align="left">Shows the magnetic field surrounding a disc.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em170.html">EM170:Cathode Ray Tubes</a></h2></td>
+<td><div align="left">Produce electron beams.</div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em171.html">EM171:Thermionics: Diodes - Rectification</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em172.html">EM172:Discharge Tubes</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+<tr>
+<td><h2 align="left" style="font-size: small"><a href="em173.html">EM173:Positive Rays</a></h2></td>
+<td><div align="left"></div></td>
+</tr>
+</table>
+	</div> 
+  </div>  
+  <div id="siteInfo">    <a href="mailto:mmalahe@gmail.com">Contact Us</a> | &copy;2007-2008
+    UCT Physics Department </div> 
+</div> 
+<!--end pagecell1--> 
+
+<!-- Initial states of side navigation -->
+<script type="text/javascript">
+    <!--
+      var menuitem1 = new menu(4,1,"0px");
+	  var menuitem2 = new menu(4,2,"0px");
+	  var menuitem3 = new menu(4,3,"0px");
+	  var menuitem4 = new menu(4,4,"0px");
+    // -->
+    </script> 
+</body>
+</html>

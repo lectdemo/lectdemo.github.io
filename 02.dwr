@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<dwquery>
+  <queryparams matchcase="false" ignorewhitespace="true" useregexp="false"wholeword="false"/>
+  <find>
+    <qtext qname=".JPG&quot;&gt;Screenshot&lt;/a&gt;" qraw="true"></qtext>
+  </find>
+  <replace action="replaceText" param1=".JPG&quot;>" param2=""/>
+</dwquery>

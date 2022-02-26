@@ -1,0 +1,6 @@
+<a href="../pracs/ad1.html" title="Accesory to demonstrations.">AD1:Bellows and Blower</a>
+<br>
+<a href="../pracs/ad2.html" title="Shows the distribution of pressure through a non-uniform cross-section.">AD2:Venturi</a>
+<br>
+<a href="../pracs/ad6.html" title="Shows the mechanism of diffusion pumps.">AD6:Pumps</a>
+<br>

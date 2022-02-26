@@ -1,0 +1,300 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/virtual.dwt" codeOutsideHTMLIsLocked="false" -->
+<!-- DW6 -->
+
+<!-- 
+Based on the Macromedia Dreamweaver MX 2004 design "Halo Left Nav" 
+Created by Michael Malahe - mmalahe@gmail.com 
+-->
+
+
+<!-- 
+---HEAD---
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Demonline - VPython Scripts</title>
+<link rel="stylesheet" href="../images/uct_phy.css" type="text/css">
+
+<!--MENU SCRIPT-->
+<script type="text/javascript">
+var time = 3000;
+var numofitems = 2; //Number of left-hand navigation menu items
+standard = "10px" //Standard font size
+
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "sec"+thisitem;
+  divname="related"+thisitem;  
+  this.numberofmenuitems = numofitems;
+  this.caller = document.getElementById(callname);
+  this.thediv = document.getElementById(divname);
+  this.thediv.style.fontSize = startstate;
+}
+
+//menu methods
+function ehandler(event,theobj){
+	if (event == 1) {//mouse click
+	    var init_state = theobj.thediv.style.fontSize;
+  		if (init_state == "0px"){
+  			theobj.thediv.style.fontSize = standard;
+  		}
+  		else if (init_state == standard){
+  			theobj.thediv.style.fontSize = "0px";
+  		}
+	}
+}
+				
+// -->
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+
+
+<!-- 
+---BODY ---
+-->
+<body> 
+<div id="breadCrumb"> 
+  <div align="center"><a href="../../pracs/index.html">lecture demos</a> | <a href="index.html">vpython scripts</a> | <a href="../../index.html">demonline home</a> | <a href="http://www.phy.uct.ac.za">uct physics home</a> </div>
+</div> 
+<div id="pagecell1"> 
+  <!--pagecell1--> 
+  <div id="pageName"> 
+    <h2 align="center"><!-- InstanceBeginEditable name="Title" -->Mechanics Index <!-- InstanceEndEditable --></h2> 
+     </strong></div> 
+  <div id="pageNav"> 
+  	
+	<div class="relatedLinks"> 
+      <h1>Script Index </h1>
+    </div>
+	
+	<div id="sectionLinks"> 
+      <a href = "#" id="sec1" class="seclink" onclick="ehandler(1,menuitem1);" title="Expand/Collapse Mechanics">Mechanics</a> 
+	</div> 
+	
+	<div id= "related1" class="subglobalNav"> 
+	  <h2><a href = "../index-m.html">Mechanics Index</a></h2>
+      <a href="01_newton.html">Newton's Second Law </a>
+	  <br><a href="02_doublependula.html">Double Pendula </a> 
+	  <br><a href="02_threebody.html">Three Body </a> 
+	  <br><a href="03_speed_of_sound.html">Speed of Sound </a> 
+	  <br><a href="04_potential_energy_well.html">Potential Energy Well </a> 
+	  <br><a href="05_baseball.html">Baseball</a>
+	  <br><a href="06_absorb_emit.html">Atom Excitation </a>
+	  <br><a href="06_Bohr_levels.html">Bohr Levels </a>
+	  <br><a href="06_franckhertz.html">Franck-Hertz</a>
+	  <br><a href="06_oscillator.html">Oscillator</a>
+	  <br><a href="07_twopucks.html">Two Pucks </a>
+	  <br><a href="08_alpha_on_alpha.html">Alpha on Alpha </a> 
+      <br><a href="08_alpha_on_electron.html">Alpha on Electron </a>
+	  <br><a href="08_Rutherford_dist.html">Rutherford - Gold </a>
+	  <br><a href="08_Rutherford_dist_pudding.html">Rutherford - Proton </a>
+	  <br><a href="09_barbell_ang_mom.html">Barbell Angular Momentum</a>
+	  <br><a href="09_crossproduct.html">Cross Product </a>
+	  <br><a href="09_crossproduct_area.html">Cross Product Area</a>
+	  <br><a href="components.html">Components</a>
+	  <br><a href="conical_pendulum.html">Conical Pendulum</a>
+	  <br><a href="pendulum.html">Pendulum</a>
+	  <br><a href="halfpipe.html">Half-pipe</a>
+	  <br><a href="interference.html">Interference</a>
+	  <br><a href="monkeyhunter.html">Monkey &amp; Hunter </a>
+	  <br><a href="projectile.html">Projectile</a>
+	  <br><a href="sinusoids.html">Sinusoids</a>
+	  <br><a href="slope.html">Slope</a>
+	  <br><a href="waves.html">Waves</a>
+	  <br><a href="vernier_calipers.html">Vernier Calipers </a></div> 
+	
+	<div id="sectionLinks"> 
+	<a href="#" id="sec2" class="seclink" onclick="ehandler(1,menuitem2);" title="Expand/Collapse Electromagnetism">Electromagnetism</a>
+    </div>
+	
+    <div id = "related2" class="subglobalNav"> 
+	  <h2><a href = "../index-e.html">Electromagnetism Index</a></h2>
+      <a href="13_E_pointcharge_drag.html">Electric Field - Point Charge</a> 
+	  <br><a href="13_vectorintro_a.html">Vector Intro </a>
+	  <br><a href="15_E_disk.html">Electrid Field - Disk </a>
+	  <br><a href="15_E_disk_add_rings.html">Electric Field - Disk - Using Rings </a> 
+	  <br><a href="15_E_ring_demo.html">Electric Field - Ring </a>
+	  <br><a href="15_E_sphere_outside_rings.html">Electric Field - Outside Sphere </a>
+	  <br><a href="15_E_sphere_rings.html">Electric Field - Inside Sphere </a>
+	  <br><a href="17_1_Bloop_with_r_dB.html">Magnetic Field - Loop</a> 
+	  <br><a href="17_B_loop_xy_xz.html">Magnetic Field - Loop - XY&amp;XZ </a> 
+	  <br><a href="17_1_Bwire_with_r.html">Magnetic Field - Wire </a>
+	  <br><a href="17_solenoid_drag.html">Magnetic Field - Solenoid </a> 
+	  <br><a href="18-Erings.html">Electric Field - Rings </a> 
+	  <br><a href="19-RCcircuit.html">RC Circuit </a> 
+	  <br><a href="20_B_fastmoving_proton.html">Magnetic Field - Moving Proton </a> 
+	  <br><a href="20_E_fastmoving_proton.html">Electric Field - Moving Proton </a>
+	  <br><a href="21_Gauss_2win.html">Gauss's Law </a> 
+	  <br><a href="23_antenna.html">Antenna</a> 
+	  <br><a href="23_plane_sinusoidal_wave.html">Plane Sinusoidal Wave </a>
+	  <br><a href="23_radiate_kink.html">Radiation Kink </a> 
+	  <br><a href="23_Radiation2D_showR.html">Radiation - 2D </a> 
+	  <br><a href="23_Radiation3D.html">Radiation - 3D </a>
+	  <br><a href="24_crystal_planes.html">Crystal Planes </a>
+	  <br><a href="24_interf_both.html">Interference</a>
+	  <br><a href="24_powder_xray.html">X-Ray Powder </a> 
+	  <br><a href="spark_mean_free_path.html">Mean Free Path </a> </div> 
+    <div class="subglobalNav"> 
+      <h1>Resources</h1>
+      <a href="http://www.python.org">Python</a> <br>
+      <a href="http://www.vpython.org">VPython</a>
+	</div> 
+  </div> 
+  <div id="content"> 
+    <div class="feature"> 
+      <!-- InstanceBeginEditable name="Body" -->
+    <table width="0%"  border="1">
+      <caption>&nbsp;
+      </caption>
+      <tr bgcolor="#CCCCCC">
+        <th scope="col"><div align="left">Name</div></th>
+        <th scope="col"><div align="left">Description</div></th>
+      </tr>
+      <tr>
+        <td width="213" scope="col">          <h2 align="left"><a href="01_newton.html">Newton's Second Law</a></h2></td>
+        <td width="643" scope="col"><div align="left">Illustrates the momentum principle (Newton's 2nd law).
+</div></td>
+      </tr>
+      <tr>
+        <td>          <h2 align="left"><a href="02_doublependula.html">Double Pendula</a></h2></td>
+        <td><div align="left"> Simulates the motion of two double pendula, to illustrate high sensitivity to initial conditions in a simple system. </div></td>
+      </tr>
+      <tr>
+        <td><div align="left">
+          <h2 align="left"><a href="02_threebody.html">Three Body</a></h2>
+        </div></td>
+        <td><div align="left"> Simulates the orbits of three planets, to illustrate high sensitivity to initial conditions in a simple system. </div></td>
+      </tr>
+      <tr>
+        <td>          <h2 align="left"><a href="03_speed_of_sound.html">Speed of Sound</a></h2></td>
+        <td><div align="left"> Simulation of a model of the propagation of sound through a metal. </div></td>
+      </tr>
+      <tr>
+        <td>          <h2 align="left"><a href="04_potential_energy_well.html">Potential Energy Well</a></h2></td>
+        <td><div align="left"> Simulates motion in a potential energy well. Allows the user to interactively change the shape of the well. </div></td>
+      </tr>
+      <tr>
+        <td>          <h2 align="left"><a href="05_baseball.html">Baseball</a></h2></td>
+        <td><div align="left"> Comparison of the motion of a baseball in a vacuum with its motion in air. </div></td>
+      </tr>
+      <tr>
+        <td>          <h2 align="left"><a href="06_absorb_emit.html">Atom Exctitation</a></h2></td>
+        <td><div align="left"> Excitation of atoms by an electron beam. </div></td>
+      </tr>
+      <tr>
+        <td>          <h2 align="left"><a href="06_Bohr_levels.html">Bohr Levels</a></h2></td>
+        <td><div align="left"> Visualisation of the energy levels of an atom using the Bohr model. </div></td>
+      </tr>
+      <tr>
+        <td>          <h2 align="left"><a href="06_franckhertz.html">Franck-Hertz</a></h2></td>
+        <td><div align="left"> Simplified visualisation of the Franck-Hertz experiment. </div></td>
+      </tr>
+      <tr>
+        <td>          <h2 align="left"><a href="06_oscillator.html">Oscillator</a></h2></td>
+        <td><div align="left"> A semi-classical visualisation of a quantum oscillator. </div></td>
+      </tr>
+      <tr>
+        <td>          <h2 align="left"><a href="07_twopucks.html">Two Pucks</a></h2></td>
+        <td><div align="left"> Motion of two pucks being pulled from different points of attachment. </div></td>
+      </tr>
+      <tr>
+        <td>          <h2 align="left"><a href="08_alpha_on_alpha.html">Alpha on Alpha</a></h2></td>
+        <td><div align="left"> Visualisation of an alpha particle incident on a stationary alpha particle. </div></td>
+      </tr>
+      <tr>
+        <td>          <h2 align="left"><a href="08_alpha_on_electron.html">Alpha on Electron</a></h2></td>
+        <td><div align="left"> An alpha particle scatters a free electron. </div></td>
+      </tr>
+      <tr>
+        <td>          <h2 align="left"><a href="08_Rutherford_dist.html">Rutherford Scattering - Gold</a></h2></td>
+        <td><div align="left"> Disk source of alpha particles scattering off a gold nucleus. </div></td>
+      </tr>
+      <tr>
+        <td>          <h2 align="left"><a href="08_Rutherford_dist_pudding.html">Rutherford Scattering - Proton</a></h2></td>
+        <td><div align="left"> Disk source of alpha particles scattering off a single proton. </div></td>
+      </tr>
+      <tr>
+        <td>          <h2 align="left"><a href="09_barbell_ang_mom.html">Barbell Angular Momentum</a></h2></td>
+        <td><div align="left"> The angular momentum of a rotating barbell. </div></td>
+      </tr>
+      <tr>
+        <td>          <h2 align="left"><a href="09_crossproduct.html">Cross Product</a></h2></td>
+        <td><div align="left"> Demonstration of the vector cross product. </div></td>
+      </tr>
+      <tr>
+        <td><h2><a href="09_crossproduct_area.html">Cross Product Area</a></h2></td>
+        <td>Demonstration of the vector cross product using the area of the vector parallellogram to show its magnitude. </td>
+      </tr>
+      <tr>
+        <td><h2><a href="components.html">Components</a></h2></td>
+        <td>Illustrates the idea that an object's motion can be broken up into components.</td>
+      </tr>
+      <tr>
+        <td><h2><a href="conical_pendulum.html">Conical Pendulum</a> </h2></td>
+        <td>Animates the motion of a conical pendulum, with snapshots of the pendulum position taken at regular intervals. </td>
+      </tr>
+      <tr>
+        <td><h2><a href="pendulum.html">Pendulum</a></h2></td>
+        <td>Animates the motion of a pendulum, with snapshots of the pendulum position taken at regular intervals. </td>
+      </tr>
+      <tr>
+        <td><h2><a href="halfpipe.html">Half-pipe</a></h2></td>
+        <td>Simulates the motion of a ball in a frictionless half-pipe, with snapshots taken at regular intervals. </td>
+      </tr>
+      <tr>
+        <td><h2><a href="interference.html">Interference</a></h2></td>
+        <td>Allows the user to pick wave types and see how they interfere with each other when travelling in opposite directions.</td>
+      </tr>
+      <tr>
+        <td><h2><a href="monkeyhunter.html">Monkey &amp; Hunter </a></h2></td>
+        <td>A visualisation of the classic monkey and hunter problem.</td>
+      </tr>
+      <tr>
+        <td><h2><a href="projectile.html">Projectile</a></h2></td>
+        <td>Simulation of projectile motion without air friction.</td>
+      </tr>
+      <tr>
+        <td><h2><a href="sinusoids.html">Sinusoids</a></h2></td>
+        <td>Shows the sum of two sinusoidal functions.</td>
+      </tr>
+      <tr>
+        <td><h2><a href="slope.html">Slope</a></h2></td>
+        <td>Simulates the motion of a ball rolling down a slope.</td>
+      </tr>
+      <tr>
+        <td><h2><a href="waves.html">Waves</a></h2></td>
+        <td>Waves of various shapes travelling in the x-direction. </td>
+      </tr>
+      <tr>
+        <td>          <h2 align="left"><a href="vernier_calipers.html">Vernier Calipers</a></h2></td>
+        <td><div align="left">Electronic vernier calipers, with the measurement value displayed.</div></td>
+      </tr>
+    </table>
+    <!-- InstanceEndEditable --></div> 
+  </div>  
+  <div id="siteInfo">    <a href="mailto:mmalahe@gmail.com">Contact Us</a> | &copy;2007-2008
+    UCT Physics Department </div> 
+</div> 
+<!--end pagecell1--> 
+
+<!-- Initial states of side navigation -->
+<script type="text/javascript">
+    <!--
+      var menuitem1 = new menu(7,1,"0px");
+	  var menuitem2 = new menu(7,2,"0px");
+    // -->
+    </script> 
+</body>
+<!-- InstanceEnd --></html>

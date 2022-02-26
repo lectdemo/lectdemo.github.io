@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/virtual.dwt" codeOutsideHTMLIsLocked="false" -->
+<!-- DW6 -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Demonline - VPython Scripts</title>
+<!-- InstanceEndEditable --><link rel="stylesheet" href="images/emx_nav_left.css" type="text/css">
+<script type="text/javascript">
+<!--
+var time = 3000;
+var numofitems = 7;
+
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "gl"+thisitem;
+  divname="subglobal"+thisitem;  
+  this.numberofmenuitems = 7;
+  this.caller = document.getElementById(callname);
+  this.thediv = document.getElementById(divname);
+  this.thediv.style.visibility = startstate;
+}
+
+//menu methods
+function ehandler(event,theobj){
+  for (var i=1; i<= theobj.numberofmenuitems; i++){
+    var shutdiv =eval( "menuitem"+i+".thediv");
+    shutdiv.style.visibility="hidden";
+  }
+  theobj.thediv.style.visibility="visible";
+}
+				
+function closesubnav(event){
+  if ((event.clientY <48)||(event.clientY > 107)){
+    for (var i=1; i<= numofitems; i++){
+      var shutdiv =eval('menuitem'+i+'.thediv');
+      shutdiv.style.visibility='hidden';
+    }
+  }
+}
+// -->
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+<body onmousemove="closesubnav(event);"> 
+<div class="skipLinks">skip to: <a href="#content">page content</a> | <a href="pageNav">links on this page</a> | <a href="#globalNav">site navigation</a> | <a href="#siteInfo">footer (site information)</a> </div>
+<div id="masthead"> 
+  <h1 align="left" id="siteName"><strong>Demonline - VPython Scripts </strong></h1>
+  <hr>
+  <p align="left"><strong></strong></p>
+  <div id="utility"> 
+    <div align="right"><a href="http://www.uct.ac.za">UCT Homepage</a> |<a href="http://www.phy.uct.ac.za"> UCT Physics Department</a> | </div>
+  </div> 
+  <!-- end globalNav --> 
+  <div id="subglobal1" class="subglobalNav"> 
+    <a href="#">subglobal1 link</a> | <a href="#">subglobal1 link</a> | <a href="#">subglobal1
+    link</a> | <a href="#">subglobal1 link</a> | <a href="#">subglobal1 link</a> | <a href="#">subglobal1
+    link</a> | <a href="#">subglobal1 link</a> 
+  </div> 
+  <div id="subglobal2" class="subglobalNav"> 
+    <a href="#">subglobal2 link</a> | <a href="#">subglobal2 link</a> | <a href="#">subglobal2
+    link</a> | <a href="#">subglobal2 link</a> | <a href="#">subglobal2 link</a> | <a href="#">subglobal2
+    link</a> | <a href="#">subglobal2 link</a> 
+  </div> 
+  <div id="subglobal3" class="subglobalNav"> 
+    <a href="#">subglobal3 link</a> | <a href="#">subglobal3 link</a> | <a href="#">subglobal3
+    link</a> | <a href="#">subglobal3 link</a> | <a href="#">subglobal3 link</a> | <a href="#">subglobal3
+    link</a> | <a href="#">subglobal3 link</a> 
+  </div> 
+  <div id="subglobal4" class="subglobalNav"> 
+    <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4
+    link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4
+    link</a> | <a href="#">subglobal4 link</a> 
+  </div> 
+  <div id="subglobal5" class="subglobalNav"> 
+    <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5
+    link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5
+    link</a> | <a href="#">subglobal5 link</a> 
+  </div> 
+  <div id="subglobal6" class="subglobalNav"> 
+    <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6
+    link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6
+    link</a> | <a href="#">subglobal6 link</a> 
+  </div> 
+  <div id="subglobal7" class="subglobalNav"> 
+    <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7
+    link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7
+    link</a> | <a href="#">subglobal7 link</a> 
+  </div> 
+  <div id="subglobal8" class="subglobalNav"> 
+    <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8
+    link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8
+    link</a> | <a href="#">subglobal8 link</a> 
+  </div> 
+</div> 
+<!-- end masthead --> 
+<div id="pagecell1"> 
+  <!--pagecell1--> 
+  <div id="breadCrumb"> 
+    <div align="right"><a href="../index.html">home</a> | <a href="../pracs/index.html">lecture demos </a> | <a href="index.html">vpython scripts</a>| </div>
+  </div> 
+  <div id="pageName"> 
+    <h2 align="center"><!-- InstanceBeginEditable name="Title" -->Virtual<!-- InstanceEndEditable --></h2> 
+     </strong></div> 
+  <div id="pageNav"> 
+  	<div class="relatedLinks"> 
+      <h1>Demonstration  index </h1>
+    </div>
+    <div class="relatedLinks"> 
+      <h3><a href="index-m.html">Mechanics</a></h3> 
+      <a href="01_newton.html">Newton's Second Law </a><a href="02_doublependula.html">Double Pendula </a> <a href="02_threebody.html">Three Body </a> <a href="03_speed_of_sound.html">Speed of Sound </a> <a href="04_potential_energy_well.html">Potential Energy Well </a> <a href="05_baseball.html">Baseball</a><a href="06_absorb_emit.html">Atom Excitation </a><a href="06_Bohr_levels.html">Bohr Levels </a><a href="06_franckhertz.html">Franck-Hertz</a><a href="06_oscillator.html">Oscillator</a><a href="07_twopucks.html">Two Pucks </a><a href="08_alpha_on_alpha.html">Alpha on Alpha </a> 
+      <a href="08_alpha_on_electron.html">Alpha on Electron </a><a href="08_Rutherford_dist.html">Rutherford - Gold </a><a href="08_Rutherford_dist_pudding.html">Rutherford - Proton </a><a href="09_barbell_ang_mom.html">Barbell Angular Momentum</a><a href="09_crossproduct.html">Cross Product </a><a href="09_crossproduct_area.html">Cross Product Area</a><a href="components.html">Components</a><a href="conical_pendulum.html">Conical Pendulum</a><a href="pendulum.html">Pendulum</a><a href="halfpipe.html">Half-pipe</a><a href="interference.html">Interference</a><a href="monkeyhunter.html">Monkey &amp; Hunter </a><a href="projectile.html">Projectile</a><a href="sinusoids.html">Sinusoids</a><a href="slope.html">Slope</a><a href="waves.html">Waves</a><a href="vernier_calipers.html">Vernier Calipers </a></div> 
+    <div class="relatedLinks"> 
+      <h3><a href="index-e.html">Electromagnetism</a></h3> 
+      <a href="13_E_pointcharge_drag.html">Electric Field - Point Charge</a> <a href="13_vectorintro_a.html">Vector Intro </a><a href="15_E_disk.html">Electrid Field - Disk </a><a href="15_E_disk_add_rings.html">Electric Field - Disk - Using Rings </a> <a href="15_E_ring_demo.html">Electric Field - Ring </a><a href="15_E_sphere_outside_rings.html">Electric Field - Outside Sphere </a><a href="15_E_sphere_rings.html">Electric Field - Inside Sphere </a><a href="17_1_Bloop_with_r_dB.html">Magnetic Field - Loop</a> <a href="17_B_loop_xy_xz.html">Magnetic Field - Loop - XY&amp;XZ </a> <a href="17_1_Bwire_with_r.html">Magnetic Field - Wire </a><a href="17_solenoid_drag.html">Magnetic Field - Solenoid </a> <a href="18-Erings.html">Electric Field - Rings </a> <a href="19-RCcircuit.html">RC Circuit </a> <a href="20_B_fastmoving_proton.html">Magnetic Field - Moving Proton </a> <a href="20_E_fastmoving_proton.html">Electric Field - Moving Proton </a><a href="21_Gauss_2win.html">Gauss's Law </a> <a href="23_antenna.html">Antenna</a> <a href="23_plane_sinusoidal_wave.html">Plane Sinusoidal Wave </a><a href="23_radiate_kink.html">Radiation Kink </a> <a href="23_Radiation2D_showR.html">Radiation - 2D </a> <a href="23_Radiation3D.html">Radiation - 3D </a><a href="24_crystal_planes.html">Crystal Planes </a><a href="24_interf_both.html">Interference</a><a href="24_powder_xray.html">X-Ray Powder </a> <a href="spark_mean_free_path.html">Mean Free Path </a> </div> 
+    <div id="advert"> 
+      <h1>Resources</h1>
+      <a href="http://www.python.org">Python</a> <br>
+      <a href="http://www.vpython.org">VPython</a> </div> 
+  </div> 
+  <div id="content"> 
+    <div class="feature"> 
+      <!-- InstanceBeginEditable name="Body" -->
+      <h3><a href="Script_name.py">Script_name.py</a></h3>
+      <p>Short description of what the script does.</p>
+      <p>&nbsp;</p>
+      <p><strong>Author:</strong> <a href="mailto:joenobody@nothingmail.com">Joe Nobody</a> <br>
+          <strong>Category:</strong> Mechanics<br>
+          <strong>Similar to:</strong> <a href="/index.html">Script_name_2.py</a></p>
+      <p><img src="images/logo.JPG"></p>
+      <!-- InstanceEndEditable --></div> 
+    <div class="story">
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div> 
+  </div>
+  <div id="siteInfo">    <a href="mailto:mmalahe@gmail.com">Contact Us</a> | &copy;2007
+    UCT Physics Department </div> 
+</div> 
+<!--end pagecell1--> 
+<br> 
+<script type="text/javascript">
+    <!--
+      var menuitem1 = new menu(7,1,"hidden");
+			var menuitem2 = new menu(7,2,"hidden");
+			var menuitem3 = new menu(7,3,"hidden");
+			var menuitem4 = new menu(7,4,"hidden");
+			var menuitem5 = new menu(7,5,"hidden");
+			var menuitem6 = new menu(7,6,"hidden");
+			var menuitem7 = new menu(7,7,"hidden");
+    // -->
+    </script> 
+</body>
+<!-- InstanceEnd --></html>

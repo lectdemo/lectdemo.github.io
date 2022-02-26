@@ -1,0 +1,677 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/pracs.dwt" codeOutsideHTMLIsLocked="false" -->
+<!-- DW6 -->
+
+<!-- 
+Based on the Macromedia Dreamweaver MX 2004 design "Halo Left Nav" 
+Created by Michael Malahe - mmalahe@gmail.com 
+-->
+
+
+<!-- 
+---HEAD---
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Demonline - Lecture Demos</title>
+<link rel="stylesheet" href="images/uct_phy.css" type="text/css">
+
+<!--MENU SCRIPT-->
+<script type="text/javascript">
+var time = 3000;
+var numofitems = 4; //Number of left-hand navigation menu items
+standard = "10px" //Standard font size
+
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "sec"+thisitem;
+  divname="related"+thisitem;  
+  this.numberofmenuitems = numofitems;
+  this.caller = document.getElementById(callname);
+  this.thediv = document.getElementById(divname);
+  this.thediv.style.fontSize = startstate;
+}
+
+//menu methods
+function ehandler(event,theobj){
+	if (event == 1) {//mouse click
+	    var init_state = theobj.thediv.style.fontSize;
+  		if (init_state == "0px"){
+  			theobj.thediv.style.fontSize = standard;
+  		}
+  		else if (init_state == standard){
+  			theobj.thediv.style.fontSize = "0px";
+  		}
+	}
+}
+				
+// -->
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+
+
+<!-- 
+---BODY ---
+-->
+<body> 
+<div id="breadCrumb"> 
+  <div align="center"><a href="index.html">lecture demos</a> | <a href="../virtual/index.html">vpython scripts</a> | <a href="../index.html">demonline home</a> | <a href="http://www.phy.uct.ac.za">uct physics home</a> </div>
+</div> 
+<div id="pagecell1"> 
+  <!--pagecell1--> 
+  <div id="pageName"> 
+    <h2 align="center"><!-- InstanceBeginEditable name="title" -->Torricelli's Law of Efflux<!-- InstanceEndEditable --></h2> 
+     </strong></div> 
+  <div id="pageNav"> 
+  	
+	<div class="relatedLinks"> 
+      <h1>Demo Index</h1>
+    </div>
+	
+	<div id="sectionLinks"> 
+      <a href = "#" id="sec1" class="seclink" onclick="ehandler(1,menuitem1);" title="Expand/Collapse Mechanics">Mechanics</a> 
+	</div> 
+	
+	<div id= "related1" class="subglobalNav"> 
+	  <h2><a href = "index-m.html">Mechanics Index</a></h2>
+      <a href="m001.html" title="Illustrates a model of atoms in a crystal lattice.">M1:Crystal Structure - Salt</a>
+		<br>
+		<a href="m002.html" title="Illustrates a model of atoms in a crystal lattice.">M2:Crystal Structure - Carbon</a>
+		<br>
+		<a href="m010.html" title="Demonstrates that acceleration due to gravity is not dependent on mass.">M10:Gravitational Acceleration</a>
+		<br>
+		<a href="m011.html" title="Demonstrates that acceleration due to gravity is not dependent on mass or shape.">M11:Guinea and Feather</a>
+		<br>
+		<a href="m012.html" title="This demonstrates the independence of the horizontal and vertical components of motion with a less intuitive setup.">M12:Gun That Never Misses</a>
+		<br>
+		<a href="m013.html" title="This demonstrates the independence of the vertical and horizontal components of velocity.">M13:Pop and Drop</a>
+		<br>
+		<a href="m014.html" title="This demonstrates the independence of the vertical and horizontal components of velocity.">M14:Rolling Cart Catches Ball</a>
+		<br>
+		<a href="m015.html" title="This illustrates the concept of centre of mass.">M15:Centre of Mass</a>
+		<br>
+		<a href="m016.html" title="Demonstrates the principle of moments.">M16:Principle of Moments</a>
+		<br>
+		<a href="m017.html" title="Demonstrates the concept of centre of gravity.">M17:Centre of Gravity</a>
+		<br>
+		<a href="m018.html" title="Demonstrates the concept of the centre of mass frame.">M18:Plunger</a>
+		<br>
+		<a href="m019.html" title="This illustrates the concept of centre of mass with a less intuitive setup.">M19:Double Cone</a>
+		<br>
+		<a href="m020.html" title="Demonstrates the concept of an inertial reference frame.">M20:Inertial Reference Frame</a>
+		<br>
+		<a href="m021.html" title="Demonstrates the &quot;absence&quot; of the graviational force in the reference frame of a free-falling system.">M21:Ball Falling into Cup</a>
+		<br>
+		<a href="m022.html" title="Entertainment">M22:Slinky</a>
+		<br>
+		<a href="m023.html" title="">M23:Falling Chimney</a>
+		<br>
+		<a href="m030.html" title="Demonstrates the concept of inertia.">M30:Inertia</a>
+		<br>
+		<a href="m040.html" title="Demonstrates the parallelogram rule for summing vectors.">M40:Parallelogram of Forces</a>
+		<br>
+		<a href="m041.html" title="This shows that equilibrium of forces takes place in 3 dimensions.">M41:Resultant of Vectors in 3D</a>
+		<br>
+		<a href="m042.html" title="Demonstrates the independence of the compenents of forces.">M42:Components of Forces</a>
+		<br>
+		<a href="m043.html" title="">M43:Aeroplane on a String</a>
+		<br>
+		<a href="m044.html" title="Demonstrates Newton's 1st law.">M44:Tangential Motion</a>
+		<br>
+		<a href="m046.html" title="">M46:Spheres on Inclined Plane</a>
+		<br>
+		<a href="m047.html" title="This is an example of three forces in equilibrium.">M47:Stability of a Ladder</a>
+		<br>
+		<a href="m048.html" title="Demonstrates that rolling friction is much smaller than sliding friction.">M48:Roller on Inclined Plane</a>
+		<br>
+		<a href="m049.html" title="Shows in principle how the coefficients of static and kinetic friction can be determined.">M49:Loaded Block on Inclined Plane</a>
+		<br>
+		<a href="m050.html" title="Demonstrates friction.">M50:Block on Inclined Plane</a>
+		<br>
+		<a href="m060.html" title="Demonstrates varying tension due to centripetal acceleration.">M60:Varying Tension in String</a>
+		<br>
+		<a href="m061.html" title="Demonstrates various pulleys.">M61:Pulley Systems</a>
+		<br>
+		<a href="m062.html" title="Shows the forces exerted on a block resting on an inclined plane.">M62:Resolution of Forces - Inclined Plane</a>
+		<br>
+		<a href="m066.html" title="Demonstrates the use of a differential pulley.">M66:Differential Pulley</a>
+		<br>
+		<a href="m067.html" title="Illustrates the principle that the work done in lifting a large mass a short distance is equivalent to the work done by a small force over a large distance.">M67:Screwjack</a>
+		<br>
+		<a href="m068.html" title="Illustrates Newton's 1st law in a less intuitive setup.">M68:Equal Masses on Double Pulley</a>
+		<br>
+		<a href="m069.html" title="A pulley with adjustable height.">M69:Adjustable Pulley</a>
+		<br>
+		<a href="m080.html" title="Demonstrates elastic collisions.">M80:Trolleys</a>
+		<br>
+		<a href="m081.html" title="Demonstrates the conservation of momentum and kinetic energy in elastic collisions.">M81:Newton's Cradle</a>
+		<br>
+		<a href="m082.html" title="Demonstrates the conservation of momentum and kinetic energy in elastic collisions.">M82:Small Newton's Cradle</a>
+		<br>
+		<a href="m083.html" title="Demonstrates the conservation of momentum and kinetic energy in elastic collisions.">M83:Balls on Rails</a>
+		<br>
+		<a href="m084.html" title="Demonstrates how momentum and kinetic energy are not conserved in inelastic collisions.">M84:Inelastic Collisions</a>
+		<br>
+		<a href="m085.html" title="Demonstrates conservation of momentum.">M85:Conservation of Momentum</a>
+		<br>
+		<a href="m086.html" title="Demonstrates the difference between elastic and inelastic collisions.">M86:Elastic and Inelastic Collisions</a>
+		<br>
+		<a href="m087.html" title="To show objects with high coefficients of restitution.">M87:Superballs</a>
+		<br>
+		<a href="m088.html" title="Demonstrates conservaiton of momentum with a less intuitive setup.">M88:Conservation of Momentum</a>
+		<br>
+		<a href="m089.html" title="Demonstrates elastic collisons.">M89:Air Track</a>
+		<br>
+		<a href="m090.html" title="Demonstrates transfer of energy in elastic and inelastic collisions.">M90:Rocket and Block</a>
+		<br>
+		<a href="m091.html" title="Demonstrates elastic collisions.">M91:Air Table</a>
+		<br>
+		<a href="m092.html" title="Demonstrates how conservation of momentum is behind the working of rockets.">M92:Water Rocket</a>
+		<br>
+		<a href="m093.html" title="An interesting and somewhat counter-intuitive experiment.">M93:Balls on Tracks</a>
+		<br>
+		<a href="m100.html" title="An interesting rotational device.">M100:Attwood's Machine</a>
+		<br>
+		<a href="m101.html" title="Illustrates the idea of moments.">M101:Crowbar</a>
+		<br>
+		<a href="m102.html" title="Demonstrates various principles of rotational motion.">M102:Rotational Motion</a>
+		<br>
+		<a href="m103.html" title="Demonstrates conservation of momentum.">M103:Conservation of Momentum: Jet Propulsion</a>
+		<br>
+		<a href="m104.html" title="Demonstrates the centripetal force on and centrifugal reaction by a constrained rotated object.">M104:Centrifugal Force</a>
+		<br>
+		<a href="m105.html" title="">M105:Rotating Candles</a>
+		<br>
+		<a href="m106.html" title="Demonstrates various rotational principles.">M106:Large Gyroscope</a>
+		<br>
+		<a href="m108.html" title="Demonstrates various rotational principles.">M108:Angular Momentum</a>
+		<br>
+		<a href="m109.html" title="Shows the working of gyroscopes.">M109:Little Gyroscopes</a>
+		<br>
+		<a href="m110.html" title="">M110:Rotational Motion</a>
+		<br>
+		<a href="m114.html" title="A wierd rotational device for interest.">M114:Celts</a>
+		<br>
+		<a href="m120.html" title="Demonstrates Hooke's Law.">M120:Hooke's Law</a>
+		<br>
+		<a href="m121.html" title="Demonstrates Hooke's Law and the elastic limit of a material.">M121:Elastic Limit</a>
+		<br>
+		<a href="m122.html" title="Demonstrates the concepts of torsion and the modulus of rigidity.">M122:Torsion &amp; Modulus of Rigidity</a>
+		<br>
+		<a href="m130.html" title="Shows the equivalence of two types of simple harmonic motion.">M130:Harmonic Motion</a>
+		<br>
+		<a href="m131.html" title="Demonstrates free-end oscillations.">M131:Cantilever Oscillations</a>
+		<br>
+		<a href="m132.html" title="A simple oscillator.">M132:Ball on a Spring</a>
+		<br>
+		<a href="m133.html" title="Demonstration of harmonic motion.">M133:Oscillating Ball on Slope</a>
+		<br>
+		<a href="m140.html" title="Simple pendulums.">M140:Simple Pendulums</a>
+		<br>
+		<a href="m141.html" title="Shows that the period of oscillation is independent of mass but proportional to the length of string.">M141:Period of Oscillation</a>
+		<br>
+		<a href="m142.html" title="An unusual pendulum.">M142:Whirligig Pendulum</a>
+		<br>
+		<a href="m143.html" title="Sshows the transformation from potential energy to kinetic energy and back again.">M143:Galileo's Pendulum</a>
+		<br>
+		<a href="m144.html" title="Demonstrates conservation of energy.">M144:Ballistic Pendulum</a>
+		<br>
+		<a href="m145.html" title="To show a system that is highly sensitive to inital conditions.">M145:Probabalistic Pendulum</a>
+		<br>
+		<a href="m146.html" title="Shows that a ring and a straight pendulum have the same period if the length of the pendulum is equal to the diameter of the ring.">M146:Ring Pendulum</a>
+		<br>
+		<a href="m147.html" title="Demonstrates how the period of a pendulum depends on its length.">M147:Different Length Pendulums</a>
+		<br>
+		<a href="m148.html" title="Demonstrates how changing the moment of inertia affects the frequency of oscillation.">M148:Oscillating Lamina</a>
+		<br>
+		<a href="m149.html" title="This is an example of a chaotic system that is highly sensitive to initial conditions.">M149:Double Pendulum</a>
+		<br>
+		<a href="m150.html" title="A comparison of the acclerations of pendulums with and without masses attached to their lower ends.">M150:Two Rod Pendulums</a>
+		<br>
+		<a href="m151.html" title="This demonstrates conservation of energy in a dramatic way.">M151:Giant Pendulum</a>
+		<br>
+		<a href="m160.html" title="Shows the normal modes of a Wilberforce pendulum.">M160:Single Wilberforce Pendulum</a>
+		<br>
+		<a href="m161.html" title="This demonstrates the effect of changing the moment of inertia on the beat frequency of a Wilberforce pendulum.">M161:Adjustable Wilberforce Pendulum</a>
+		<br>
+		<a href="m162.html" title="Demonstration of a coupled oscillator.">M162:Simple Coupled Oscillator</a>
+		<br>
+		<a href="m163.html" title="Demonstration of coupled oscillators.">M163:Oscillators Coupled by Mass</a>
+		<br>
+		<a href="m164.html" title="Demonstration of coupled oscillators.">M164:Oscillators Coupled by Rod</a>
+		<br>
+		<a href="m165.html" title="Demonstration of coupled oscillators.">M165:Oscillators Coupled by Bar</a>
+		<br>
+		<a href="m166.html" title="Demonstration of coupled oscillators.">M166:Pair of Wilberforce Pendulums</a>
+		<br>
+		<a href="m170.html" title="Demonstrates resonance.">M170:Resonance</a>
+		<br>
+		<a href="m171.html" title="Demonstration of resonance.">M171:Resonance Oscillations</a>
+		<br>
+		<a href="m180.html" title="Used to illustrate the sensitivity and stability of a chemical balance.">M180:Chemical Balance</a>
+		<br>
+		<a href="m181.html" title="Large model of Vernier calipers">M181:Large Vernier Calipers</a>
+		<br>
+		<a href="m182.html" title="A large slide rule.">M182:Large Slide Rule</a>
+		<br>
+		<a href="m183.html" title="">M183:Model of a Vernier Scale</a>
+		<br>
+		<a href="m184.html" title="A micrometer screw-gauge is a tool used to make fine measurements.">M184:Micrometer Screwgauge</a>
+		<br>
+		<a href="m185.html" title="A spherometer is a tool used to make fine measurements">M185:Spherometer</a>
+		<br>
+		<a href="m186.html" title="Use them to demonstrate vectors in three dimensions.">M186:Vector Arrows</a>
+		<br>
+    </div> 
+	
+	<div id="sectionLinks"> 
+	<a href="#" id="sec2" class="seclink" onclick="ehandler(1,menuitem2);" title="Expand/Collapse Electromagnetism">Electromagnetism</a>
+    </div>
+	
+    <div id = "related2" class="subglobalNav"> 
+	  <h2><a href = "index-e.html">Electromagnetism Index</a></h2>
+      	<a href="em001.html" title="Measures voltage/current.">EM1:Galvanometer</a>
+<br>
+<a href="em002.html" title="Power Supply.">EM2:Audio Oscillator</a>
+<br>
+<a href="em003.html" title="Power Supply.">EM3:Variac</a>
+<br>
+<a href="em021.html" title="Shows charging by induction.">EM21:Charging By Induction</a>
+<br>
+<a href="em022.html" title="Shows distribution of charge.">EM22:Faraday&rsquo;s Ice Pail</a>
+<br>
+<a href="em023.html" title="Shows the distribution of charge on concentric shells.">EM23:Charge On Concentric Shells</a>
+<br>
+<a href="em024.html" title="Shows the distribution of charge on irregularly shaped objects.">EM24:Charge On Irregular Shapes</a>
+<br>
+<a href="em025.html" title="Shows charging by induction.">EM25:Charging By Induction 2</a>
+<br>
+<a href="em026.html" title="Generates static electricity.">EM26:Van de Graaf Generators</a>
+<br>
+<a href="em027.html" title="Demonstrates concepts in electrostatics.">EM27:Box Of Electrostatic Demos</a>
+<br>
+<a href="em028.html" title="Demonstrates the concept of capacitance.">EM28:Capacitance</a>
+<br>
+<a href="em029.html" title="Shows the effect of a dielectric on capacitance.">EM29:Capacitor With Dielectric</a>
+<br>
+<a href="em030.html" title="Simple electrostatics demonstration.">EM30:Capacitor With Ball</a>
+<br>
+<a href="em031.html" title="Amusing electrostatics demonstration.">EM31:Spark Gaps</a>
+<br>
+<a href="em032.html" title="Shows the effect of plate distance on capacitance.">EM32:Variable Capacitors</a>
+<br>
+<a href="em033.html" title="For interest's sake only.">EM33:Kelvin Current Balance</a>
+<br>
+<a href="em034.html" title="Shows the direction of the electrostatic field.">EM34:The Electrostatic Field</a>
+<br>
+<a href="em035.html" title="Illustrates the basic principle of many electrostatic machines.">EM35:The Electrophorous</a>
+<br>
+<a href="em036.html" title="Basic experiments on electrification by contact and friction.">EM36:Triboelectricity</a>
+<br>
+<a href="em037.html" title="Simple electrostatics demonstration.">EM37:Swinging Pith Ball</a>
+<br>
+<a href="em038.html" title="Used for transferring charge.">EM38:Proof Planes</a>
+<br>
+<a href="em039.html" title="Used to measure potential difference.">EM39:Gold Leaf Electroscopes</a>
+<br>
+<a href="em040.html" title="Used to generate static electricity.">EM40:Whimshurst Machines</a>
+<br>
+<a href="em051.html" title="Shows the difference between resistance in series and resistance in parallel.">EM51:Resistance</a>
+<br>
+<a href="em055.html" title="Demonstrates back EMF.">EM55:Back EMF Of Motor</a>
+<br>
+<a href="em057.html" title="Shows that a capacitor &ldquo;passes&rdquo; alternating current but not direct current.">EM57:Time-Dependent Currents</a>
+<br>
+<a href="em060.html" title="Demonstrates the time constant of a capacitor.">EM60:Time Constant</a>
+<br>
+<a href="em061.html" title="Enables varying capacitance for demonstrations.">EM61:Variable Capacitor</a>
+<br>
+<a href="em062.html" title="A large capacitor.">EM62:Giant Capacitor</a>
+<br>
+<a href="em063.html" title="A capacitor with high capacitance.">EM63:1 Farad Capacitor</a>
+<br>
+<a href="em064.html" title="Unusual capacitor.">EM64:Capacitor In A Glass</a>
+<br>
+<a href="em065.html" title="A series of capacitors.">EM65:Canned Capacitors</a>
+<br>
+<a href="em066.html" title="Shows a variety of capacitors.">EM66:Box Of Capacitors</a>
+<br>
+<a href="em093.html" title="Demonstrates parallel resonance.">EM93:Alternating Currents</a>
+<br>
+<a href="em094.html" title="Produces extremely high voltage build-up.">EM94:Tesla Coil</a>
+<br>
+<a href="em096.html" title="Demonstrates the current variation in an LR circuit.">EM96:LR Circuit</a>
+<br>
+<a href="em097.html" title="Shows self-inductance.">EM97:Self-Inductance</a>
+<br>
+<a href="em098.html" title="Demonstrates electrical beating.">EM98:Electrical Beats</a>
+<br>
+<a href="em100.html" title="Demonstrates electrical resonance.">EM100:Resonance</a>
+<br>
+<a href="em121.html" title="Impressive high-voltage demonstration.">EM121:Step-Up Transformer</a>
+<br>
+<a href="em125.html" title="Shows the attraction and repulstion of parallel currents.">EM125:Parallel Currents</a>
+<br>
+<a href="em126.html" title="Demonstration of low voltage, high current conditions.">EM126:Step-Down Transformer</a>
+<br>
+<a href="em127.html" title="An entertaining demonstration of inductance.">EM127:Bulbs Light Via Inductance</a>
+<br>
+<a href="em128.html" title="Shows electromagnetic induction in a coil of wire.">EM128:Induction in a Coil</a>
+<br>
+<a href="em129.html" title="Shows self-inductance.">EM129:Self-Inductor</a>
+<br>
+<a href="em130.html" title="Shows the effect of eddy currents.">EM130:Magnetic Braking</a>
+<br>
+<a href="em131.html" title="Shows induction from one coil to another.">EM131:Induction: Coil-to-Coil</a>
+<br>
+<a href="em132.html" title="Shows induction from a changing magnetic field.">EM132:Induction: Spinning Magnet</a>
+<br>
+<a href="em133.html" title="Shows induction using the Earth's magnetic field.">EM133:Earth Inductors</a>
+<br>
+<a href="em141.html" title="Shows the mechanism of a galvanometer.">EM141:Galvanometer</a>
+<br>
+<a href="em142.html" title="Shows the direction of the magnetic field in a current-carrying loop.">EM142:Magnetic Field in Loop</a>
+<br>
+<a href="em143.html" title="Shows a naturally magnetic material.">EM143:Lodestone</a>
+<br>
+<a href="em144.html" title="Shows the dipole nature of magnets.">EM144:North and South Poles</a>
+<br>
+<a href="em145.html" title="Shows repulsion of like poles of a magnet.">EM145:Mahomet's Coffin</a>
+<br>
+<a href="em146.html" title="Shows repulsion of like poles of a magnet.">EM146:Mahomet's Coffin - Rings</a>
+<br>
+<a href="em147.html" title="Shows the magnetic field of a bar magnet.">EM147:Magnetic Field - Bar</a>
+<br>
+<a href="em148.html" title="Demonstrates induced magnetisation.">EM148:Induced Magnetisation</a>
+<br>
+<a href="em149.html" title="Shows the magnetic field due to a current-carrying wire.">EM149:Magnetic Field - Current</a>
+<br>
+<a href="em150.html" title="Demonstrates the magnetic force.">EM150:Sticks</a>
+<br>
+<a href="em151.html" title="Shows the direction of the magnetic field around a current-carrying wire.">EM151:Oersted's Experiment</a>
+<br>
+<a href="em152.html" title="Shows the force on a moving charge in a magnetic field.">EM152:Force on Moving Charge</a>
+<br>
+<a href="em153.html" title="Shows wavelength-dependent transmission of electromagnetic waves.">EM153:Faraday Cage</a>
+<br>
+<a href="em155.html" title="Demonstrates hysteresis.">EM155:Hysteresis</a>
+<br>
+<a href="em156.html" title="Demonstrates the Curie point.">EM156:Curie Temperature</a>
+<br>
+<a href="em157.html" title="Shows the magnetic field surrounding a disc.">EM157:Magnetic Field - Disc</a>
+<br>
+<a href="em170.html" title="Produce electron beams.">EM170:Cathode Ray Tubes</a>
+<br>
+<a href="em171.html" title="">EM171:Thermionics: Diodes - Rectification</a>
+<br>
+<a href="em172.html" title="">EM172:Discharge Tubes</a>
+<br>
+<a href="em173.html" title="">EM173:Positive Rays</a>
+<br>
+
+	</div> 
+	<div id="sectionLinks"> 
+	<a href="#" id="sec3" class="seclink" onclick="ehandler(1,menuitem3);" title="Expand/Collapse Light and Waves">Light and Waves</a>
+    </div>
+	
+    <div id = "related3" class="subglobalNav"> 
+	  <h2><a href = "index-l.html">Light and Waves Index</a></h2>
+      	<a href="l01.html" title="Used for focussing of light.">L1:Linear Lens Arrays</a>
+		<br>
+		<a href="l02.html" title="Demonstrates spherical and chromatic aberration.">L2:Lens Aberrations</a>
+		<br>
+		<a href="l03.html" title="Useful for various light demonstrations.">L3:Lenses and Mirrors</a>
+		<br>
+		<a href="l04.html" title="Useful for light demonstrations.">L4:Panels</a>
+		<br>
+		<a href="l05.html" title="Useful for light demonstrations.">L5:Case of Lenses</a>
+		<br>
+		<a href="l08.html" title="">L8:Unknown</a>
+		<br>
+		<a href="l12.html" title="Demonstrates a mechanical analogy to refraction.">L12:Mechanical Refraction</a>
+		<br>
+		<a href="l13.html" title="Demonstrates refraction.">L13:Refraction Tank</a>
+		<br>
+		<a href="l14.html" title="Demonstrates refraction in a medium which is not isotropic.">L14:Double Refraction</a>
+		<br>
+		<a href="l15.html" title="Demonstrates multiple reflections.">L15:Multiple Reflections</a>
+		<br>
+		<a href="l17.html" title="Unknown">L17:Semi-Circle Mirrors</a>
+		<br>
+		<a href="l19.html" title="An optical set for light demonstrations.">L19:Lightbox Optical Set</a>
+		<br>
+		<a href="l22.html" title="Demonstrates total internal reflection.">L22:Total Reflection</a>
+		<br>
+		<a href="l30.html" title="">L30:Adjustable Prism</a>
+		<br>
+		<a href="l32.html" title="Shows dispersion of light without mean deviation.">L32:Direct Vision Prism</a>
+		<br>
+		<a href="l33.html" title="">L33:Unknown</a>
+		<br>
+		<a href="l35.html" title="Unknown">L35:Prism on Stand</a>
+		<br>
+		<a href="l36.html" title="Shows variation in refractivity.">L36:Prism Tower</a>
+		<br>
+		<a href="l41.html" title="Shows standing waves.">L41:Vibrating String</a>
+		<br>
+		<a href="l42.html" title="Unknown">L42:Resonator</a>
+		<br>
+		<a href="l43.html" title="Demonstrates the vibrational modes of a plate.">L43:Chladni Plate</a>
+		<br>
+		<a href="l44.html" title="Shows the constructive and destructive interference of two point sources.">L44:Point Source Interference</a>
+		<br>
+		<a href="l45.html" title="Shows the interference from reflection of light between two surfaces.">L45:Newton's Rings</a>
+		<br>
+		<a href="l47.html" title="Demonstrates longtudinal waves.">L47:Longitudinal Waves</a>
+		<br>
+		<a href="l49.html" title="Demonstrates torsional waves.">L49:Torsional Waves</a>
+		<br>
+		<a href="l50.html" title="">L50:Array of Glass Plates</a>
+		<br>
+		<a href="l51.html" title="Demonstrates polarisation by using Brewster's angle.">L51:Polarisation</a>
+		<br>
+		<a href="l53.html" title="Demonstrates interference.">L53:Interfering Waves</a>
+		<br>
+		<a href="l55.html" title="Shows compressional and standing waves.">L55:Crova&rsquo;s Disc</a>
+		<br>
+		<a href="l56.html" title="Unknown">L56:Lamp on Rod</a>
+		<br>
+		<a href="l57.html" title="">L57:Ultraviolet Lamp</a>
+		<br>
+		<a href="l58.html" title="">L58:Small UV Lamp</a>
+		<br>
+		<a href="l59.html" title="Used for light demonstrations.">L59:Light Boxes</a>
+		<br>
+		<a href="l61.html" title="">L61:Directed Lamp</a>
+		<br>
+		<a href="l62.html" title="Produces monochromatic light.">L62:Helium-Neon Laser</a>
+		<br>
+		<a href="l66.html" title="Demonstrates various photoelastimetric effects.">L66:Photoelasticimetry</a>
+		<br>
+		<a href="l67.html" title="">L67:Light Polarisation</a>
+		<br>
+		<a href="l69.html" title="Demonstrates the rectilinear propagation of light.">L69:Rectilinear Propagation</a>
+		<br>
+		<a href="l71.html" title="Unknown">L71:Unknown</a>
+		<br>
+		<a href="l76.html" title="Shows the difference between absorption and reflection colours.">L76:Absorption and Reflection</a>
+		<br>
+		<a href="l77.html" title="">L77:Colour Rendering</a>
+		<br>
+		<a href="l78.html" title="Shows colour mixture using filters.">L78:Colour Mixture</a>
+		<br>
+		<a href="l79.html" title="Shows that white light is made up of many colours.">L79:Colour Wheel</a>
+		<br>
+		<a href="l80.html" title="">L80:Coloured Slats</a>
+    </div> 
+	  
+	<div id="sectionLinks"> 
+	<a href="#" id="sec4" class="seclink" onclick="ehandler(1,menuitem4);" title="Expand/Collapse Thermodynamics">Thermodynamics and Matter </a>
+    </div>
+	
+    <div id = "related4" class="subglobalNav"> 
+<h2><a href = "index-h.html">Thermodynamics and Matter Index</a></h2>
+<a href="h1.html" title="Demonstrates thermal expansion.">H1:Thermal Expansion</a>
+<br>
+<a href="h2.html" title="To show force exerted on contraction.">H2:Contraction on Cooling</a>
+<br>
+<a href="h3.html" title="Shows difference in expansion between materials.">H3:Varying thermal expansion</a>
+<br>
+<a href="h6.html" title="">H6:Thermal Expansion of Liquids</a> 
+<br>
+<a href="h7.html" title="">H7:Thermal Expansion</a> 
+<br>
+<a href="h8.html" title="Shows thermal expansion.">H8:Thermal Expansion</a>
+<br>
+<a href="h12.html" title="Shows metling of ice to due pressure.">H12:Regelation of Ice</a>
+<br>
+<a href="h15.html" title="Shows cooling by evaporation.">H15:Cooling by Evaporation</a>
+<br>
+<a href="h17.html" title="Demonstrates increased pressure due to vaporisation.">H17:Vapour pressure</a>
+<br>
+<a href="h18.html" title="">H18:</a>
+<br>
+<a href="h20.html" title="">H20:Cloud Chamber</a>
+<br>
+<a href="h21.html" title="Nice demonstration of evaporative cooling.">H21:Dippy Dillies</a>
+<br>
+<a href="h24.html" title="Shows the compressibility at the critical point.">H24:Critical Point of C02</a>
+<br>
+<a href="h25.html" title="">H25:Hygrometers</a>
+<br>
+<a href="h31.html" title="Shows the varying thermal conductivity of different materials.">H31:Thermal Conductivity</a>
+<br>
+<a href="h32.html" title="Demonstrates the principle of Miner's lamp.">H32:Thermal Conductivity</a>
+<br>
+<a href="h33.html" title="Model of hot water heating system.">H33:Convection</a>
+<br>
+<a href="h36.html" title="Demonstrates thermal radiation.">H36:Radiation</a>
+<br>
+<a href="h37.html" title="">H37:Heat Absorption</a>
+<br>
+<a href="h38.html" title="Shows the reflection, absorption and emission properties of materials.">H38:Radiation</a>
+<br>
+<a href="h39.html" title="Shows an interesting radiation-based thermometer.">H39:Radiation</a>
+<br>
+<a href="h42.html" title="Used to measure radiant flux.">H42:Radiometer</a>
+<br>
+<a href="h45.html" title="">H45:Thermocouple</a>
+<br>
+<a href="h46.html" title="To show that a solution of Iodine in carbon disulphide, opaque to visible light, is transparent to infrared.">H46:Radiation: Diathermancy</a>
+<br>
+<a href="h47.html" title="Interesting indicators of temperature.">H47:Indicators of Temperature</a>
+<br>
+<a href="h48.html" title="">H48:Berthelot Apparatus</a>
+<br>
+<a href="h49.html" title="">H49:Bunsen Ice Calorimeter</a>
+<br>
+<a href="h50.html" title="Demonstration of a clever heat engine.">H50:Heat Engines</a>
+<br>
+<a href="h51.html" title="">H51:Strain: Bologne Phials</a>
+<br>
+<a href="h52.html" title="">H52:Portable De-ioniser</a><br>
+<a href="hy1.html" title="Shows that upthrust increases as immersed volume increases.">HY1:Upthrust on Floating Body</a>
+<br>
+<a href="hy2.html" title="">HY2:Liquid Levels</a> <br>
+<a href="hy5.html" title="Shows the dependence of fluid pressure at a point on the weight of fluid above it.">HY5:Fluid Pressure</a> <br>
+<a href="hy6.html" title="">HY6:Hydrostatic Paradox: Pascal&rsquo;s Vases</a> <br>
+<a href="hy7.html" title="">HY7:Archimedes&rsquo; principle</a> <br>
+<a href="hy8.html" title="">HY8:Upthrust</a>
+<br>
+<a href="hy10.html" title="">HY10:Buoys</a>
+<br>
+<a href="hy11.html" title="Demonstrates the properties of air and water.">HY11:Cartesian Diver</a>
+<br>
+<a href="hy12.html" title="">HY12:Vortex Action</a><br>
+
+<a href="hd4.html" title="Demonstrates relaxation oscillations.">HD4:Relaxation Oscillations</a> 
+<br>
+<a href="hd5.html" title="Demonstrates relaxation oscillations.">HD5:Relaxation Oscillations</a> 
+<br>
+<a href="hd6.html" title="Shows the importance of shape in buoyancy.">HD6:Buoyancy - Shape</a>
+<br>
+<a href="hd11.html" title="Shows dependence of liquid pressure at a point on the volume of liquid above it.">Torricelli's Law of Efflux</a>
+<br>
+<a href="ap1.html" title="Shows the strength of atmospheric pressure.">AP1:Magdeberg Hemispheres</a>
+<br>
+<a href="ap10.html" title="Used for atmospheric pressure measurements.">AP10:Manometer</a>
+<br>
+<a href="ap11.html" title="Accesory to demonstrations.">AP11:Bell Jars</a>
+<br>
+<a href="ap12.html" title="Used for evacuation of vessels.">AP12:Hand Pump</a>
+<br>
+<a href="ap13.html" title="Accesory to demonstrations.">AP13:Glass Syringes</a>
+<br>
+<a href="ap3.html" title="Used to measure air pressure.">AP3:Pressure gauges</a>
+<br>
+<a href="ap4.html" title="Weighing air.">AP4:Air Weighing</a>
+<br>
+<a href="ap7.html" title="Demonstrates the force due to pressure difference.">AP7:The Bernoulli Effect</a>
+<br>
+<a href="ad1.html" title="Accesory to demonstrations.">AD1:Bellows and Blower</a>
+<br>
+<a href="ad2.html" title="Shows the distribution of pressure through a non-uniform cross-section.">AD2:Venturi</a>
+<br>
+<a href="ad6.html" title="Shows the mechanism of diffusion pumps.">AD6:Pumps</a>
+<br>
+<a href="s1.html" title="">S1:Propagation Needs a Medium</a>
+<br>
+<a href="s2.html" title="">S2:Organ Pipes</a> <br>
+<a href="s3.html" title="">S3:&ldquo;Gauze Tones&rdquo; - Beats</a> <br>
+<a href="s5.html" title="Demonstrates the Doppler effect.">S5:Doppler effect</a> <br>
+<a href="s7.html" title="">S7:Galton&rsquo;s Whistle and Sensitive Flame</a> <br>
+<a href="s8.html" title="">S8:Periodic Pulses</a> <br>
+<a href="s9.html" title="">S9:The Siren</a><br>
+<a href="s10.html" title="">S10:Resonance</a>
+<br>
+<a href="s12.html" title="">S12:Tuning Forks</a>
+<br>
+<br>
+
+
+
+    </div>
+	 
+	
+    <div class="subglobalNav"> 
+      This section of the site is currently under construction.
+	</div> 
+  </div> 
+  <div id="content"> 
+    <div class="feature"> 
+      <p> <strong>Reference:</strong> <!-- InstanceBeginEditable name="ref" -->HD11<!-- InstanceEndEditable --><br> 
+        <strong>Category:</strong> <!-- InstanceBeginEditable name="cat" -->Hydrodynamics<!-- InstanceEndEditable --><br> 
+        <strong>Purpose: </strong><!-- InstanceBeginEditable name="purpose" -->Shows dependence of liquid pressure at a point on the volume of liquid above it. <!-- InstanceEndEditable --><br>
+        <strong>Description: </strong><!-- InstanceBeginEditable name="description" -->Holes in a tall cylinder covered by a strip of cellotape. Rip strip off. Jet Jet from middle hole travels furthest horizontally.
+<!-- InstanceEndEditable --><br>
+        <strong><!-- InstanceBeginEditable name="stfield" --><!-- InstanceEndEditable --></strong> <!-- InstanceBeginEditable name="similar to" --><a href="/index.html"></a><!-- InstanceEndEditable --></p>
+      <p><!-- InstanceBeginEditable name="image" --><img src="images/hd11.JPG"><!-- InstanceEndEditable --></p>
+	</div> 
+  </div>  
+  <div id="siteInfo">    <a href="mailto:mmalahe@gmail.com">Contact Us</a> | &copy;2007-2008
+    UCT Physics Department </div> 
+</div> 
+<!--end pagecell1--> 
+
+<!-- Initial states of side navigation -->
+<script type="text/javascript">
+    <!--
+      var menuitem1 = new menu(4,1,"0px");
+	  var menuitem2 = new menu(4,2,"0px");
+	  var menuitem3 = new menu(4,3,"0px");
+	  var menuitem4 = new menu(4,4,"0px");
+    // -->
+    </script> 
+</body>
+<!-- InstanceEnd --></html>
